@@ -1,1 +1,6 @@
+# Sass
 .sass-cache
+
+# IntelliJ IDEA
+.idea
+*.iml

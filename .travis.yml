@@ -14,4 +14,4 @@ script:
 notifications:
   email:
     recipients:
-      - jeffreyzhang@vip.qq.com
+    - secure: QBMbGh61xZJIP+sFbQiS1I+ASMj5DhkIuOSo5yY4lymbhZJascPAQ1kX2LS8LmW4mZIWREndAVJ/sNwRomkeBUsmwh0WA3VWmyBLNYDA/gVFIDdBImXgNffLpH6xeAEd3+8CA9HgP44NWM7gponyaXvCSohhOASngrfx6ugluSY=

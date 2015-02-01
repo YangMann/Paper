@@ -5,7 +5,7 @@ node_js:
 
 before_install:
 - npm install -g jshint
-- gem install sass compass modular-scale sassy-math
+- gem install sass compass
 
 script:
 - jshint .

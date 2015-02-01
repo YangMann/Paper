@@ -14,4 +14,4 @@ script:
 notifications:
   email:
     recipients:
-    - secure: QBMbGh61xZJIP+sFbQiS1I+ASMj5DhkIuOSo5yY4lymbhZJascPAQ1kX2LS8LmW4mZIWREndAVJ/sNwRomkeBUsmwh0WA3VWmyBLNYDA/gVFIDdBImXgNffLpH6xeAEd3+8CA9HgP44NWM7gponyaXvCSohhOASngrfx6ugluSY=
+    - secure: i8QL+MzSV/ei/I+cCA0FRWo64THumQun94vvYVqahe5x27tKyVoAjvR0IBn97pXVAN7hbsRBtooe10AmPB+PbQmwgky2knt8I9kTOfCtRuV/rsm7FcH3nUTxpeipZsfr7z3+/xv1f7kiGjGwZDtr6Bvjsju2v5PNAn912FWBZZw=

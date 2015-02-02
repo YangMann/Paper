@@ -15,3 +15,4 @@ notifications:
   email:
     recipients:
     - secure: i8QL+MzSV/ei/I+cCA0FRWo64THumQun94vvYVqahe5x27tKyVoAjvR0IBn97pXVAN7hbsRBtooe10AmPB+PbQmwgky2knt8I9kTOfCtRuV/rsm7FcH3nUTxpeipZsfr7z3+/xv1f7kiGjGwZDtr6Bvjsju2v5PNAn912FWBZZw=
+    - secure: J1u4ZJBTkzb85u8J5WXX0qrfuzZJZhG6vx38ZgLepA3ATchGXhw9YOWY6YYt5mdUpS4+mUEJLqWbItmGv0Z8UJPxznPu+mPqUqBiwvRcaDJ3ANCELGnbF5I6/MW6R+Hk8zPcfimHRnJdpiGxMO5OGIZgfhzjbldZV5XnCEdj2zw=

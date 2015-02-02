@@ -22,6 +22,36 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
+html {
+    font-size: 100%;
+    line-height: 1.5em;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffbf0;
+    font-family: "Source Han Sans", "Hiragino Sans", "Microsoft Yahei", sans-serif;
+    font-weight: 300;
+    color: #1c1e2a;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        width: 100%;
+        min-width: 0;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Source Han Sans", "Hiragino Sans", "Microsoft Yahei", sans-serif;
     font-weight: 200;

@@ -1,2 +1,27 @@
 // base styles
 @import "compass/typography/vertical_rhythm";
+@import "compass/css3/box-sizing";
+@import "variables/settings";
+@import "mixins/media-queries";
+
+@include establish-baseline;
+
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+  background-color: $color-background;
+  font-family: $font-family;
+  font-weight: $font-weight-body;
+  color: $color-body-text;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include media(phone) {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    width: 100%;
+    min-width: 0;
+  }
+}

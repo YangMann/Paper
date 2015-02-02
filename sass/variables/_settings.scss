@@ -1,17 +1,16 @@
 // typography
 $font-family: "Source Han Sans", "Hiragino Sans", "Microsoft Yahei", sans-serif;
-$font-family-heading: $font-family;
 // replace with your heading fonts
-$font-smoothing: antialiased;
+$font-family-heading: $font-family;
 
 // font weight
 $font-weight-heavy: 700;
 $font-weight-bold: 600;
 $font-weight-medium: 500;
-$font-weight-regular: 400;
 // for dark backgrounds, smaller screens (iPhone)
-$font-weight-normal: 300;
+$font-weight-regular: 400;
 // for light backgrounds, bigger screens (iPad)
+$font-weight-normal: 300;
 $font-weight-light: 200;
 $font-weight-extra-light: 100;
 
@@ -50,10 +49,11 @@ $device-width-tablet: 768px;
 $device-width-large-screen: 2880px;
 $document-width: $row-width-max;
 
-// typography colors
+// colors
 $color-heading-text: #161823 !default;
 $color-heading-link: #9d2933 !default;
 $color-heading-link-hover: #c93756 !default;
 $color-body-text: #1c1e2a !default;
 $color-body-link: #9d2933 !default;
 $color-body-link-hover: #c93756 !default;
+$color-background: #fffbf0;

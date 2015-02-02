@@ -26,6 +26,7 @@ $ms-ratio: $golden;
 $ms-base: 16px 78px;
 
 // sizing
+@import "modular-scale";
 $xsmall: modular-scale(-2);
 $small: modular-scale(-1);
 $normal: modular-scale(0);

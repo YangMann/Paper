@@ -21,3 +21,112 @@ q:before, q:after, blockquote:before, blockquote:after { content: ""; content: n
 a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Han Sans", "Hiragino Sans", "Microsoft Yahei", sans-serif;
+    font-weight: 200;
+    color: #161823;
+    text-rendering: optimizeLegibility;
+    padding-top: 0.252em;
+    line-height: 1.0665em;
+    padding-bottom: 0.252em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #9d2933;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: #c93756;
+}
+
+@media only screen and (max-width: 767px) {
+    h1, h2, h3, h4, h5, h6 {
+        word-wrap: break-word;
+    }
+}
+
+h1 {
+    font-size: 67.77709px;
+    font-size: 4.23607rem;
+}
+
+h1.xlarge {
+    font-size: 109.66563px;
+    font-size: 6.8541rem;
+}
+
+h1.xxlarge {
+    font-size: 126.20665px;
+    font-size: 7.88792rem;
+}
+
+h1.absurd {
+    font-size: 177.44273px;
+    font-size: 11.09017rem;
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 41.88854px;
+        font-size: 2.61803rem;
+    }
+}
+
+h2 {
+    font-size: 41.88854px;
+    font-size: 2.61803rem;
+}
+
+@media only screen and (max-width: 767px) {
+    h2 {
+        font-size: 35.79335px;
+        font-size: 2.23708rem;
+    }
+}
+
+h3 {
+    font-size: 29.79335px;
+    font-size: 1.86208rem;
+}
+
+h4 {
+    font-size: 25.88854px;
+    font-size: 1.61803rem;
+}
+
+h5 {
+    font-size: 18.4133px;
+    font-size: 1.15083rem;
+}
+
+h6 {
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+p {
+    font-family: "Source Han Sans", "Hiragino Sans", "Microsoft Yahei", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    line-height: 1.5em;
+}
+
+p.lead {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 18.4133px;
+}
+
+a {
+    color: #9d2933;
+    text-decoration: none;
+    outline: 0;
+    line-height: inherit;
+}
+
+a:hover {
+    color: #c93756;
+}

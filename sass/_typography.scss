@@ -1,0 +1,92 @@
+@import "variables/settings";
+@import "mixins/font-size";
+@import "mixins/media-queries";
+
+// typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+  font-weight: $font-weight-heading;
+  color: $color-heading-text;
+  text-rendering: optimizeLegibility;
+  @include padding-leader($rhythm-padding);
+  @include adjust-leading-to($rhythm-line-height);
+  @include padding-trailer($rhythm-padding);
+
+  a {
+    color: $color-heading-link;
+    &:hover {
+      color: $color-heading-link-hover;
+    }
+  }
+
+  @include media(phone) {
+    & {
+      word-wrap: break-word;
+    }
+  }
+}
+
+h1 {
+  @include font-size-rem($xxxlarge);
+  &.xlarge {
+    @include font-size-rem($reallybig);
+  }
+  &.xxlarge {
+    @include font-size-rem($tremendous);
+  }
+  &.absurd {
+    @include font-size-rem($absurd);
+  }
+  @include media(phone) {
+    & {
+      @include font-size-rem($xlarge);
+    }
+  }
+}
+
+h2 {
+  @include font-size-rem($xlarge);
+  @include media(phone) {
+    & {
+      @include font-size-rem($larger + 6);
+    }
+  }
+}
+
+h3 {
+  @include font-size-rem($larger);
+}
+
+h4 {
+  @include font-size-rem($large);
+}
+
+h5 {
+  @include font-size-rem($medium);
+}
+
+h6 {
+  @include font-size-rem($normal);
+}
+
+p {
+  font-family: $font-family;
+  font-weight: $font-weight-body;
+  @include font-size-rem($base-font-size);
+  margin-bottom: $base-line-height / 2;
+  @include adjust-leading-to(1);
+  &.lead {
+    @include font-size-rem(modular-scale(0) * 1.25);
+    margin-bottom: modular-scale(1);
+  }
+}
+
+a {
+  color: $color-body-link;
+  text-decoration: none;
+  outline: 0;
+  line-height: inherit;
+  &:hover {
+    color: $color-body-link-hover;
+  }
+}

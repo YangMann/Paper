@@ -1,0 +1,16 @@
+@import "../variables/settings";
+
+@function breakpoint($breakpoint) {
+  @if $breakpoint == $document-width {
+    @return $document-width - 1;
+  }
+  @if $breakpoint == $device-width-tablet {
+    @return $device-width-tablet - 1;
+  }
+  @if $breakpoint == $device-width-min {
+    @return $device-width-min + 1;
+  }
+  @if $breakpoint == $document-width {
+    @return $document-width - 1;
+  }
+}

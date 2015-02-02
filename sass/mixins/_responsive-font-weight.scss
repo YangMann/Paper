@@ -1,0 +1,11 @@
+@import "../variables/settings";
+@import "media-queries";
+
+// switch to optimal font-weight according to screen size
+@mixin responsive-body-font-weight {
+  font-weight: $font-weight-normal;
+
+  @include media(phone) {
+    font-weight: $font-weight-regular;
+  }
+}

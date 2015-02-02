@@ -1,0 +1,59 @@
+// typography
+$font-family: "Source Han Sans", "Hiragino Sans", "Microsoft Yahei", sans-serif;
+$font-family-heading: $font-family;
+// replace with your heading fonts
+$font-smoothing: antialiased;
+
+// font weight
+$font-weight-heavy: 700;
+$font-weight-bold: 600;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+// for dark backgrounds, smaller screens (iPhone)
+$font-weight-normal: 300;
+// for light backgrounds, bigger screens (iPad)
+$font-weight-light: 200;
+$font-weight-extra-light: 100;
+
+$font-weight-heading: $font-weight-light;
+$font-weight-body: $font-weight-normal !default;
+
+// vertical rhythm
+$rhythm-padding: 0.168;
+$rhythm-line-height: 0.711;
+
+// modular-scale settings
+$ms-ratio: $golden;
+$ms-base: 16px 78px;
+
+// sizing
+$xsmall: modular-scale(-2);
+$small: modular-scale(-1);
+$normal: modular-scale(0);
+$medium: modular-scale(1);
+$large: modular-scale(2);
+$larger: modular-scale(3);
+$xlarge: modular-scale(4);
+$xxlarge: modular-scale(5);
+$xxxlarge: modular-scale(6);
+$reallybig: modular-scale(8);
+$tremendous: modular-scale(9);
+$absurd: modular-scale(10);
+
+// grid
+$row-width-max: 940px !default;
+$column-number: 12 !default;
+
+// responsiveness
+$device-width-min: 320px;
+$device-width-tablet: 768px;
+$device-width-large-screen: 2880px;
+$document-width: $row-width-max;
+
+// typography colors
+$color-heading-text: #161823 !default;
+$color-heading-link: #9d2933 !default;
+$color-heading-link-hover: #c93756 !default;
+$color-body-text: #1c1e2a !default;
+$color-body-link: #9d2933 !default;
+$color-body-link-hover: #c93756 !default;

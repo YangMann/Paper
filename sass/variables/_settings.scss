@@ -1,5 +1,5 @@
 // typography
-$font-family: "Source Han Sans", "Hiragino Sans", "Microsoft Yahei", sans-serif;
+$font-family: "Source Han Sans", "Hiragino Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
 // replace with your heading fonts
 $font-family-heading: $font-family;
 
@@ -18,7 +18,7 @@ $font-weight-heading: $font-weight-light;
 $font-weight-body: $font-weight-normal !default;
 
 // vertical rhythm
-$rhythm-padding: 0.168;
+$rhythm-spacing: 0.168;
 $rhythm-line-height: 0.711;
 
 // modular-scale settings
@@ -57,4 +57,5 @@ $color-heading-link-hover: #c93756 !default;
 $color-body-text: #1c1e2a !default;
 $color-body-link: #9d2933 !default;
 $color-body-link-hover: #c93756 !default;
-$color-background: #fffbf0;
+$color-background: #fffbf0 !default;
+$color-text-selection: #e0f0e9 !default;

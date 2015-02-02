@@ -1,6 +1,7 @@
 // base styles
 @import "compass/typography/vertical_rhythm";
 @import "compass/css3/box-sizing";
+@import "compass/css3/selection";
 @import "variables/settings";
 @import "mixins/media-queries";
 
@@ -8,6 +9,7 @@
 
 * {
   @include box-sizing(border-box);
+  @include selection($color-text-selection);
 }
 
 body {

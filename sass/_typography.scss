@@ -9,9 +9,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weight-heading;
   color: $color-heading-text;
   text-rendering: optimizeLegibility;
-  @include padding-leader($rhythm-padding);
+  @include padding-leader($rhythm-spacing);
   @include adjust-leading-to($rhythm-line-height);
-  @include padding-trailer($rhythm-padding);
+  @include padding-trailer($rhythm-spacing);
 
   a {
     color: $color-heading-link;
@@ -74,11 +74,15 @@ p {
   font-family: $font-family;
   font-weight: $font-weight-body;
   @include font-size-rem($base-font-size);
-  margin-bottom: $base-line-height / 2;
+  @include margin-trailer($rhythm-line-height/2);
   @include adjust-leading-to(1);
   &.lead {
     @include font-size-rem(modular-scale(0) * 1.25);
     margin-bottom: modular-scale(1);
+  }
+  &.indent {
+    text-indent: 2em;
+    text-indent: 2rem;
   }
 }
 
@@ -90,4 +94,29 @@ a {
   &:hover {
     color: $color-body-link-hover;
   }
+}
+
+ul, ol {
+  @include margin-trailer($rhythm-spacing);
+}
+
+ul {
+  list-style: none outside;
+  ul {
+    margin: rhythm(0.25, $base-font-size) 0 rhythm(0.25, $base-font-size) 2em;
+    margin-left: 2rem;
+  }
+}
+
+ol {
+  list-style: decimal;
+  margin-left: $base-font-size*2;
+  ol {
+    margin: rhythm(0.25, $base-font-size) 0 rhythm(0.25, $base-font-size) 2em;
+    margin-left: 2rem;
+  }
+}
+
+li {
+  @include padding-trailer($rhythm-spacing);
 }

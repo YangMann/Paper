@@ -33,9 +33,19 @@ html {
     box-sizing: border-box;
 }
 
+*::-moz-selection {
+    color: #000;
+    background-color: #e0f0e9;
+}
+
+*::selection {
+    color: #000;
+    background-color: #e0f0e9;
+}
+
 body {
     background-color: #fffbf0;
-    font-family: "Source Han Sans", "Hiragino Sans", "Microsoft Yahei", sans-serif;
+    font-family: "Source Han Sans", "Hiragino Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
     font-weight: 300;
     color: #1c1e2a;
     position: relative;
@@ -53,7 +63,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Source Han Sans", "Hiragino Sans", "Microsoft Yahei", sans-serif;
+    font-family: "Source Han Sans", "Hiragino Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
     font-weight: 200;
     color: #161823;
     text-rendering: optimizeLegibility;
@@ -136,11 +146,11 @@ h6 {
 }
 
 p {
-    font-family: "Source Han Sans", "Hiragino Sans", "Microsoft Yahei", sans-serif;
+    font-family: "Source Han Sans", "Hiragino Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
     font-weight: 300;
     font-size: 16px;
     font-size: 1rem;
-    margin-bottom: 12px;
+    margin-bottom: 0.53325em;
     line-height: 1.5em;
 }
 
@@ -148,6 +158,11 @@ p.lead {
     font-size: 20px;
     font-size: 1.25rem;
     margin-bottom: 18.4133px;
+}
+
+p.indent {
+    text-indent: 2em;
+    text-indent: 2rem;
 }
 
 a {
@@ -159,4 +174,31 @@ a {
 
 a:hover {
     color: #c93756;
+}
+
+ul, ol {
+    margin-bottom: 0.252em;
+}
+
+ul {
+    list-style: none outside;
+}
+
+ul ul {
+    margin: 0.375em 0 0.375em 2em;
+    margin-left: 2rem;
+}
+
+ol {
+    list-style: decimal;
+    margin-left: 32px;
+}
+
+ol ol {
+    margin: 0.375em 0 0.375em 2em;
+    margin-left: 2rem;
+}
+
+li {
+    padding-bottom: 0.252em;
 }

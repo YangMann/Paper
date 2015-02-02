@@ -7,6 +7,14 @@ Sass (3.4+), compass (1.0.3), modular-scale (2.0.5) and sassy-math (1.5.1) are n
 
     gem install sass compass modular-scale sassy-math
 
+### Font matters!
+[Font Spider (字蛛)](http://font-spider.org/ "Font Spider (字蛛)") has made beautiful Chinese (CJK) fonts available for web.
+Theoretically you can use ANY (open source) Chinese (CJK) font with Paper. We encourage you to use Font Spider to compress
+your font before deployment to achieve high performance.
+
+By default, Paper use [Source Han Sans (思源雅黑)](https://github.com/adobe-fonts/source-han-sans "Source Han Sans (思源雅黑)"),
+an elegant open source CJK font by Adobe. You can change the font-family in `vars/_settings.scss`. 
+
 ## Compile
 In command line, navigate to the directory where `config.rb` is located, and run
 

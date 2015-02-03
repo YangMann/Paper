@@ -32,4 +32,12 @@ We prepared a demo page for preview. In command line, navigate to `jade` directo
 
     jade demo.jade -P -o ..
 
-And you can preview the rendered `demo.html` in browser. 
+And you can preview the rendered `demo.html` in browser.
+
+## Usage
+### Grid
+`.container` is optional for centering your page into a comfortable reading width.
+
+`.row` is the outside wrapper for a set of columns with class names like `.span-{m}-of-{n}`. Each column will take m/n of
+the full container/page width. You can add class `.push-{m}-of-{n}` to push the corresponding column to the right for a
+intended width. Add `.centered` class to a column to make it align to the center of the row. 

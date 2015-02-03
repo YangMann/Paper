@@ -5,7 +5,8 @@
 @mixin responsive-body-font-weight {
   font-weight: $font-weight-normal;
 
-  @include media(phone) {
+  @include screen(phone) {
     font-weight: $font-weight-regular;
+    @content;
   }
 }

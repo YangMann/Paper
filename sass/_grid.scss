@@ -1,0 +1,47 @@
+@import "mixins/media-queries";
+@import "mixins/clearfix";
+
+// grid
+.container {
+  margin: 0 auto;
+  max-width: $container-width-max;
+  width: 70%;
+  @include screen(tablet) {
+    width: 85%;
+  }
+  @include screen(phone) {
+    width: 90%;
+  }
+}
+
+.row {
+  margin: 0 auto;
+  @include clearfix;
+
+  .col {
+    float: left;
+    &:not(.no-gutter) {
+      padding: 0 $gutter-width-px/2;
+    }
+    @include box-sizing(border-box);
+
+    @for $i from 1 through $column-number-max {
+      @for $j from 1 through $i {
+        &.span-#{$j}-#{$i} {
+          width: unquote(100/$i*$j+"%");
+        }
+        @if $i != $j {
+          &.push-#{$j}-#{$i} {
+            margin-left: unquote(100/$i*$j+"%");
+          }
+        }
+      }
+    }
+
+    &.centered {
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+  }
+}

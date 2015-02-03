@@ -4,6 +4,7 @@
 @import "compass/css3/selection";
 @import "variables/settings";
 @import "mixins/media-queries";
+@import "mixins/responsive-font-weight";
 
 @include establish-baseline;
 
@@ -15,15 +16,14 @@
 body {
   background-color: $color-background;
   font-family: $font-family;
-  font-weight: $font-weight-body;
-  color: $color-body-text;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @include media(phone) {
+  @include responsive-body-font-weight {
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     width: 100%;
     min-width: 0;
   }
+  color: $color-body-text;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

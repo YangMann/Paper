@@ -1,6 +1,7 @@
 @import "variables/settings";
 @import "mixins/font-size";
 @import "mixins/media-queries";
+@import "mixins/responsive-font-weight";
 @import "compass/typography/vertical_rhythm";
 
 // typography
@@ -20,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
-  @include media(phone) {
+  @include screen(phone) {
     & {
       word-wrap: break-word;
     }
@@ -38,7 +39,7 @@ h1 {
   &.absurd {
     @include font-size-rem($absurd);
   }
-  @include media(phone) {
+  @include screen(phone) {
     & {
       @include font-size-rem($xlarge);
     }
@@ -47,7 +48,7 @@ h1 {
 
 h2 {
   @include font-size-rem($xlarge);
-  @include media(phone) {
+  @include screen(phone) {
     & {
       @include font-size-rem($larger + 6);
     }
@@ -72,7 +73,7 @@ h6 {
 
 p {
   font-family: $font-family;
-  font-weight: $font-weight-body;
+  @include responsive-body-font-weight;
   @include font-size-rem($base-font-size);
   @include margin-trailer($rhythm-line-height/2);
   @include adjust-leading-to(1);

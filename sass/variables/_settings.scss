@@ -42,7 +42,9 @@ $absurd: modular-scale(10);
 
 // grid
 $row-width-max: 940px !default;
-$column-number: 12 !default;
+$container-width-max: 1280px !default;
+$column-number-max: 12 !default;
+$gutter-width-px: 20px !default;
 
 // responsiveness
 $device-width-min: 320px;
@@ -57,5 +59,6 @@ $color-heading-link-hover: #c93756 !default;
 $color-body-text: #1c1e2a !default;
 $color-body-link: #9d2933 !default;
 $color-body-link-hover: #c93756 !default;
-$color-background: #fffbf0 !default;
+$color-background: #ffffff !default;
+$color-paper: #fffbf0 !default;
 $color-text-selection: #e0f0e9 !default;

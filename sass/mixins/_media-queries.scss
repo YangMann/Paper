@@ -1,8 +1,8 @@
 @import "../variables/settings";
-@import "../functions/breakpoint";
+@import "../functions/_breakpoints";
 
 // media queries
-@mixin media($screen) {
+@mixin screen($screen) {
   @if ($screen == phone-vertical) {
     @media only screen and (max-width: $device-width-min) {
       @content;

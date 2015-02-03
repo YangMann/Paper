@@ -3,6 +3,7 @@
 @import "mixins/media-queries";
 @import "mixins/responsive-font-weight";
 @import "compass/typography/vertical_rhythm";
+@import "compass/css3/flexbox";
 
 // typography
 h1, h2, h3, h4, h5, h6 {
@@ -120,4 +121,34 @@ ol {
 
 li {
   @include padding-trailer($rhythm-spacing);
+}
+
+// Chinese typography specifications, inspired by typo.css http://typo.sofi.sh/
+blockquote {
+  color: $color-quote-text;
+  margin: rhythm($rhythm-line-height, $base-font-size) 4em rhythm($rhythm-line-height, $base-font-size) 4em;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  position: relative;
+  min-height: $base-font-size * 3;
+  @include display-flex();
+  @include align-items(center);
+  &:before, &:after {
+    position: absolute;
+    display: inline-block;
+    font-size: $base-font-size * 4;
+    font-weight: $font-weight-extra-light;
+    color: $color-quotation-mark;
+    line-height: $base-font-size * 4;
+  }
+  &:before {
+    content: '\300e';
+    left: -$base-font-size * 5;
+    top: 0;
+  }
+  &:after {
+    content: '\300f';
+    right: -$base-font-size * 5;
+    bottom: 0;
+  }
 }

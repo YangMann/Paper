@@ -39,5 +39,15 @@ And you can preview the rendered `demo.html` in browser.
 `.container` is optional for centering your page into a comfortable reading width.
 
 `.row` is the outside wrapper for a set of columns with class names like `.span-{m}-of-{n}`. Each column will take m/n of
-the full container/page width. You can add class `.push-{m}-of-{n}` to push the corresponding column to the right for a
-intended width. Add `.centered` class to a column to make it align to the center of the row. 
+the full container/page width. (It means a "row" in your page, but if the fractions of columns sum up to 1, they will
+automatically form a new row.) You can add class `.push-{m}-of-{n}` to push the corresponding column to the right for a
+intended width. Add `.centered` class to a column to make it align to the center of the row.
+
+Paper's semantic fraction-declared grid system makes the layout highly customizable. But Paper do have a maximum column
+number limit which is by default 12 and you can change it in `variables/_settings.scss`.
+
+You can make the grid responsive! Just append other column fraction to the original `.col.span-{m}-of-{n}`. Column fractions
+for different screen sizes are declared as `.span-phone-vertical-{m}-of-{n}`, `.span-phone-horizontal-{m}-of-{n}`,
+`.span-phone-{m}-of-{n}` and `.span-tablet-{m}-of-{n}`.
+
+NOTE: as a matter of math, you need to make sure that `m <= n` and all columns sum up to 1 in each of your intended row.

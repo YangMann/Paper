@@ -86,6 +86,9 @@ p {
     text-indent: 2em;
     text-indent: 2rem;
   }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 a {
@@ -95,6 +98,7 @@ a {
   line-height: inherit;
   &:hover {
     color: $color-body-link-hover;
+    border-bottom: 1px solid;
   }
 }
 
@@ -151,4 +155,49 @@ blockquote {
     right: -$base-font-size * 5;
     bottom: 0;
   }
+}
+
+del {
+  text-decoration: line-through;
+}
+
+sup, sub {
+  font-size: 75%;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+u {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+mark {
+  background-color: rgba($color-marker, 0.4);
+  color: inherit;
+  margin: -0.2em;
+  padding: 0.2em;
+}
+
+em {
+  position: relative;
+  &:after {
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    content: "\30fb";
+  }
+}
+
+abbr {
+  border-bottom: 1px dotted;
+  font-variant: normal;
+  cursor: help;
 }

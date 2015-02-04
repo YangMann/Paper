@@ -57,9 +57,10 @@ p { font-family: "Source Han Sans", "Hiragino Sans", "Hiragino Sans GB", "Micros
 @media only screen and (max-width: 767px) { p { font-weight: 400; } }
 p.lead { font-size: 20px; font-size: 1.25rem; margin-bottom: 18.4133px; }
 p.indent { text-indent: 2em; text-indent: 2rem; }
+p:last-child { margin-bottom: 0; }
 
 a { color: #9d2933; text-decoration: none; outline: 0; line-height: inherit; }
-a:hover { color: #c93756; }
+a:hover { color: #c93756; border-bottom: 1px solid; }
 
 ul, ol { margin-bottom: 0.252em; }
 
@@ -75,6 +76,23 @@ blockquote { color: #50616d; margin: 1.0665em 4em 1.0665em 4em; margin-left: 4re
 blockquote:before, blockquote:after { position: absolute; display: inline-block; font-size: 64px; font-weight: 100; color: #758a99; line-height: 64px; }
 blockquote:before { content: '\300e'; left: -80px; top: 0; }
 blockquote:after { content: '\300f'; right: -80px; bottom: 0; }
+
+del { text-decoration: line-through; }
+
+sup, sub { font-size: 75%; position: relative; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+u { text-decoration: none; border-bottom: 1px solid; }
+
+mark { background-color: rgba(250, 255, 114, 0.4); color: inherit; margin: -0.2em; padding: 0.2em; }
+
+em { position: relative; }
+em:after { position: absolute; top: 0.5em; left: 0; content: "\30fb"; }
+
+abbr { border-bottom: 1px dotted; font-variant: normal; cursor: help; }
 
 .container { margin: 0 auto; max-width: 1280px; width: 70%; }
 @media only screen and (min-width: 768px) and (max-width: 939px) { .container { width: 85%; } }

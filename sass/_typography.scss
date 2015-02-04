@@ -2,6 +2,7 @@
 @import "mixins/font-size";
 @import "mixins/media-queries";
 @import "mixins/responsive-font-weight";
+@import "mixins/responsive-font-size";
 @import "compass/typography/vertical_rhythm";
 @import "compass/css3/flexbox";
 
@@ -86,9 +87,6 @@ p {
     text-indent: 2em;
     text-indent: 2rem;
   }
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 a {
@@ -155,6 +153,9 @@ blockquote {
     right: -$base-font-size * 5;
     bottom: 0;
   }
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 del {
@@ -193,6 +194,7 @@ em {
     top: 0.5em;
     left: 0;
     content: "\30fb";
+    text-indent: 0;
   }
 }
 
@@ -200,4 +202,8 @@ abbr {
   border-bottom: 1px dotted;
   font-variant: normal;
   cursor: help;
+}
+
+.responsive-text {
+  @include responsive-font-size(1rem, 1.5rem, $device-width-min, $document-width);
 }

@@ -51,3 +51,12 @@ for different screen sizes are declared as `.span-phone-vertical-{m}-of-{n}`, `.
 `.span-phone-{m}-of-{n}` and `.span-tablet-{m}-of-{n}`.
 
 NOTE: as a matter of math, you need to make sure that `m <= n` and all columns sum up to 1 in each of your intended row.
+
+### Typography
+Paper highly focuses on Chinese typography. Inspired by [typo.css](http://typo.sofi.sh/ "typo.css"), Paper brought Chinese
+typography and annotations to web. `<u>`, `<blockquote>`, `<sub>`, `<sup>`, `<mark>`, `<em>` tags are following Chinese
+typography standards. NOTE: `<em>` is supported through a javascript plugin in `javascript` directory.
+
+Paper supports responsive font-size and font-weight. Use `.responsive-text` to make your text self-resize in
+different screen sizes. The font-weight is switched automatically without any additional annotation. It switch font-weight
+of `<p>` between "regular" and "normal" in respect of smaller screens and larger screens. 

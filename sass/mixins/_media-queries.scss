@@ -24,7 +24,7 @@
       @content;
     }
   } @else if ($screen == desktop) {
-    @media only screen and (min-width: $device-width-tablet) {
+    @media only screen and (min-width: $document-width) {
       @content;
     }
   } @else if ($screen == large-screen) {

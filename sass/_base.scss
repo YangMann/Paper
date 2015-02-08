@@ -2,9 +2,11 @@
 @import "compass/typography/vertical_rhythm";
 @import "compass/css3/box-sizing";
 @import "compass/css3/selection";
+@import "compass/css3/flexbox";
 @import "variables/settings";
 @import "mixins/media-queries";
 @import "mixins/responsive-font-weight";
+@import "mixins/visibility";
 
 @include establish-baseline;
 
@@ -26,4 +28,56 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.text-center {
+  @extend %text-center;
+}
+
+.text-left {
+  @extend %text-left;
+}
+
+.text-right {
+  @extend %text-right;
+}
+
+%text-center {
+  text-align: center;
+}
+
+%text-left {
+  text-align: left;
+}
+
+%text-right {
+  text-align: right;
+}
+
+// vertical align
+.valign {
+  @include display-flex();
+  @include align-items(center);
+
+  > * {
+    display: block;
+  }
+}
+
+.hide {
+  &:not(.show) {
+    display: none;
+  }
+}
+
+.hidden-phone {
+  @include hidden(phone);
+}
+
+.hidden-tablet {
+  @include hidden(tablet);
+}
+
+.hidden-desktop {
+  @include hidden(desktop);
 }

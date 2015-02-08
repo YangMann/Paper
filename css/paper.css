@@ -31,6 +31,23 @@ html { font-size: 100%; line-height: 1.5em; }
 body { background-color: #ffffff; font-family: "Source Han Sans", "Hiragino Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif; font-weight: 300; color: #1c1e2a; position: relative; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 @media only screen and (max-width: 767px) { body { font-weight: 400; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; } }
 
+.text-center { text-align: center; }
+
+.text-left { text-align: left; }
+
+.text-right { text-align: right; }
+
+.valign { display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; }
+.valign > * { display: block; }
+
+.hide:not(.show) { display: none; }
+
+@media only screen and (max-width: 767px) { .hidden-phone { display: none !important; } }
+
+@media only screen and (min-width: 768px) and (max-width: 939px) { .hidden-tablet { display: none !important; } }
+
+@media only screen and (min-width: 940px) { .hidden-desktop { display: none !important; } }
+
 h1, h2, h3, h4, h5, h6 { font-family: "Source Han Sans", "Hiragino Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif; font-weight: 200; color: #161823; text-rendering: optimizeLegibility; padding-top: 0.252em; line-height: 1.0665em; padding-bottom: 0.252em; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #9d2933; }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #c93756; }

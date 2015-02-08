@@ -14,7 +14,8 @@ Theoretically you can use ANY (open source) Chinese (CJK) font with Paper. We en
 your font before deployment.
 
 By default, Paper uses [Source Han Sans (思源雅黑)](https://github.com/adobe-fonts/source-han-sans "Source Han Sans (思源雅黑)"),
-an elegant open source CJK font by Adobe. You can change the font-family in `variables/_settings.scss`.
+an elegant open source CJK font by Adobe. You can change the font-family in `variables/_settings.scss`. NOTE: Source Hans
+Sans currently has some display problems on IE11 like lower underlines, higher emphasize dots and unaligned marker padding.
 
 ## Compile
 In command line, navigate to the directory where `config.rb` is located, and run
@@ -59,4 +60,12 @@ typography standards. NOTE: `<em>` is supported through a javascript plugin in `
 
 Paper supports responsive font-size and font-weight. Use `.responsive-text` to make your text self-resize in
 different screen sizes. The font-weight is switched automatically without any additional annotation. It switch font-weight
-of `<p>` between "regular" and "normal" in respect of smaller screens and larger screens. 
+of `<p>` between "regular" and "normal" in respect of smaller screens and larger screens.
+
+### Helpers
+#### Vertical align
+Add `.valign` to an element will make the children align to vertical center.
+#### Hide
+`.hide` will make an element hidden, add `.show` will make it visible.
+
+We also provide `.hidden-phone`, `.hidden-tablet` and `.hidden-desktop` to hide content on specific screen sizes.

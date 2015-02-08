@@ -1,0 +1,13 @@
+@import "media-queries";
+
+@mixin hidden($media) {
+  @include screen($media) {
+    display: none !important;
+  }
+}
+
+@mixin visible($media) {
+  @include screen($media) {
+    display: inherit !important;
+  }
+}

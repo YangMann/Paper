@@ -54,5 +54,13 @@ include _base
                     .col.span-2-4 2/4
                 .row
                     .col.span-4-7.centered 4/7
+            #valign
+                .row
+                    .valign(style="height: 200px;")
+                        h3 这段文字是垂直居中的。
+                .row
+                    .col.span-1-3.hidden-phone 这段文字在手机屏幕上会消失
+                    .col.span-1-3.hidden-phone.hidden-tablet 这段文字只会显示在桌面显示器上
+                    .col.span-1-3.hidden-desktop 这段文字在桌面显示器上会消失
         script(src="javascript/vendor/jquery-2.1.3.min.js")
         script(src="javascript/typography.js")

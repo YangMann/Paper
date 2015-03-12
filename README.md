@@ -69,3 +69,7 @@ Add `.valign` to an element will make the children align to vertical center.
 `.hide` will make an element hidden, add `.show` will make it visible.
 
 We also provide `.hidden-phone`, `.hidden-tablet` and `.hidden-desktop` to hide content on specific screen sizes.
+
+### Document
+Using `.document` will give your article an awesome layout. We also provide different types of documents: `.document-redhead`,
+`.document-image`, `.document-newspaper`. See the demo page for detailed usage. 

@@ -73,8 +73,12 @@ h6 {
   @include font-size-rem($normal);
 }
 
+article {
+  @include font-size-rem($base-font-size);
+}
+
 p {
-  font-family: $font-family;
+  font-family: inherit;
   @include responsive-body-font-weight;
   @include font-size-rem($base-font-size);
   @include margin-trailer($rhythm-line-height/2);
@@ -82,9 +86,16 @@ p {
   &.lead {
     @include font-size-rem(modular-scale(0) * 1.25);
     margin-bottom: modular-scale(1);
+    text-indent: 0;
   }
-  &.indent {
+  article > & {
     text-indent: 2em;
+    &.no-indent {
+      text-indent: 0;
+    }
+  }
+  * > & {
+    font-size: inherit;
   }
 }
 
@@ -107,16 +118,14 @@ ul {
   list-style: none outside;
   ul {
     margin: rhythm(0.25, $base-font-size) 0 rhythm(0.25, $base-font-size) 2em;
-    margin-left: 2rem;
   }
 }
 
 ol {
   list-style: decimal;
-  margin-left: $base-font-size*2;
+  margin-left: 2em;
   ol {
     margin: rhythm(0.25, $base-font-size) 0 rhythm(0.25, $base-font-size) 2em;
-    margin-left: 2rem;
   }
 }
 
@@ -204,5 +213,5 @@ abbr {
 }
 
 .responsive-text {
-  @include responsive-font-size(1rem, 1.5rem, $device-width-min, $document-width);
+  @include responsive-font-size(1rem, 1.5rem, $device-width-min, $page-width);
 }

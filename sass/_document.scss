@@ -1,0 +1,89 @@
+@import "variables/settings";
+@import "mixins/z-depth";
+@import "mixins/media-queries";
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3/columns";
+
+// document styles
+.document {
+  position: relative;
+  overflow: hidden;
+  @include rhythm-margins($rhythm-line-height);
+  background-color: $color-paper;
+  padding: 0.618*$document-padding $document-padding;
+  @include screen(tablet-vertical) {
+    padding: 0.618*$document-padding/2 $document-padding/2;
+  }
+  @include z-depth-1;
+
+  .document-title {
+    text-align: center;
+    @include margin-trailer($rhythm-line-height);
+  }
+
+  &.document-red-head {
+    background-color: $color-background;
+
+    .document-title {
+      @include padding-trailer($rhythm-line-height);
+      @include margin-trailer($rhythm-line-height + $rhythm-spacing);
+      border-bottom: 2px $color-heading-red-head solid;
+
+      &, h1, h2, h3, h4, h5, h6 {
+        font-family: SimSong, serif;
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+
+  &.document-image {
+    padding: 0;
+    .document-title {
+      margin-bottom: 0;
+      position: relative;
+      img {
+        display: block;
+        width: 100%;
+      }
+      .document-title-text {
+        position: absolute;
+        bottom: 10%;
+        left: 10% * 0.618;
+        max-width: 100% - 10% * 0.618 * 2;
+        @include rhythm-padding($rhythm-spacing);
+        padding-left: 2em;
+        padding-right: 2em;
+        background-color: rgba($color-shade, 0.8);
+        * {
+          color: $color-background;
+        }
+      }
+    }
+    .document-content {
+      padding: 0 $document-padding $document-padding*0.618 $document-padding;
+      @include padding-leader($rhythm-line-height);
+      @include screen(tablet-vertical) {
+        padding: 0 $document-padding/2 $document-padding*0.618/2 $document-padding/2;
+        @include padding-leader($rhythm-line-height/2);
+      }
+    }
+  }
+
+  &.document-newspaper {
+    background-color: $color-newspaper;
+    .document-title {
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: $font-weight-heavy;
+      }
+    }
+    .document-content {
+      @include column-count(2);
+      @include screen(phone-vertical) {
+        @include column-count(1);
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

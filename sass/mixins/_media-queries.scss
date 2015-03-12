@@ -20,11 +20,11 @@
       @content;
     }
   } @else if ($screen == tablet) {
-    @media only screen and (min-width: $device-width-tablet) and (max-width: breakpoint($document-width)) {
+    @media only screen and (min-width: $device-width-tablet) and (max-width: breakpoint($page-width)) {
       @content;
     }
   } @else if ($screen == desktop) {
-    @media only screen and (min-width: $document-width) {
+    @media only screen and (min-width: $page-width) {
       @content;
     }
   } @else if ($screen == large-screen) {

@@ -3,7 +3,6 @@
 @import "compass/css3/box-sizing";
 @import "compass/css3/selection";
 @import "compass/css3/flexbox";
-@import "variables/settings";
 @import "mixins/media-queries";
 @import "mixins/responsive-font-weight";
 @import "mixins/visibility";
@@ -30,18 +29,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.text-center {
-  @extend %text-center;
-}
-
-.text-left {
-  @extend %text-left;
-}
-
-.text-right {
-  @extend %text-right;
-}
-
 %text-center {
   text-align: center;
 }
@@ -52,6 +39,18 @@ body {
 
 %text-right {
   text-align: right;
+}
+
+.text-center {
+  @extend %text-center;
+}
+
+.text-left {
+  @extend %text-left;
+}
+
+.text-right {
+  @extend %text-right;
 }
 
 // vertical align

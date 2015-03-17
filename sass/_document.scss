@@ -11,9 +11,6 @@
   @include rhythm-margins($rhythm-line-height);
   background-color: $color-paper;
   padding: 0.618*$document-padding $document-padding;
-  @include screen(tablet-vertical) {
-    padding: 0.618*$document-padding/2 $document-padding/2;
-  }
   @include z-depth-1;
 
   .document-title {
@@ -47,9 +44,9 @@
       }
       .document-title-text {
         position: absolute;
-        bottom: 10%;
-        left: 10% * 0.618;
-        max-width: 100% - 10% * 0.618 * 2;
+        left: 10%;
+        bottom: 10% * 0.618;
+        max-width: 100% - 10% * 2;
         @include rhythm-padding($rhythm-spacing);
         padding-left: 2em;
         padding-right: 2em;
@@ -62,10 +59,6 @@
     .document-content {
       padding: 0 $document-padding $document-padding*0.618 $document-padding;
       @include padding-leader($rhythm-line-height);
-      @include screen(tablet-vertical) {
-        padding: 0 $document-padding/2 $document-padding*0.618/2 $document-padding/2;
-        @include padding-leader($rhythm-line-height/2);
-      }
     }
   }
 
@@ -84,6 +77,16 @@
       p {
         margin-bottom: 0;
       }
+    }
+  }
+
+  &.vertical {
+    max-height: 400px;
+    .document-title {
+      text-align: start;
+    }
+    .document-content {
+
     }
   }
 }

@@ -27,7 +27,7 @@
       border-bottom: 2px $color-heading-red-head solid;
 
       &, h1, h2, h3, h4, h5, h6 {
-        font-family: SimSong, serif;
+        font-family: $font-family-song;
         font-weight: $font-weight-bold;
       }
     }
@@ -81,12 +81,33 @@
   }
 
   &.vertical {
-    max-height: 400px;
+    article {
+      @include font-size-rem($base-font-size * 1.2);
+    }
+    &, h1, h2, h3, h4, h5, h6 {
+      font-family: $font-family-fangsong;
+    }
     .document-title {
+      text-align: left; // IE hack
       text-align: start;
     }
     .document-content {
-
+      position: relative;
+      padding: 0.5em 0;
+      p {
+        line-height: 40px;
+      }
+      @include background-image(linear-gradient(left, $color-black 0, $color-paper 1px, $color-paper 2.5em));
+      @include background-size(2.5em 100%);
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border: 1px solid $color-black;
+      }
     }
   }
 }

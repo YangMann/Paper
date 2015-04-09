@@ -73,3 +73,5 @@ We also provide `.hidden-phone`, `.hidden-tablet` and `.hidden-desktop` to hide 
 ### Document
 Using `.document` will give your article an awesome layout. We also provide different types of documents: `.document-redhead`,
 `.document-image`, `.document-newspaper`. See the demo page for detailed usage. 
+#### Vertical documents
+Try out `.document.vertical` and prepare to get surprised! 

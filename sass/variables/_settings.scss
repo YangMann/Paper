@@ -1,5 +1,8 @@
 // typography
 $font-family: "Source Han Sans", "Hiragino Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+$font-family-song: Arial, Helvetica, tahoma, verdana, "??", SimSun, "????", STXihei, sans-serif;
+$font-family-fangsong: Georgia, "Times New Roman", "FangSong", "??", STFangSong, "????", serif;
+$font-family-kaiti: Georgia, "Times New Roman", "KaiTi", "??", STKaiti, "????", serif;
 // replace with your heading fonts
 $font-family-heading: $font-family;
 
@@ -53,22 +56,23 @@ $device-width-large-screen: 2880px;
 $page-width: $row-width-max;
 
 // colors
+$color-black: #000000 !default;
 $color-heading-text: #161823 !default;
-$color-heading-red-head: #ff2121 !default;
-$color-heading-link: #9d2933 !default;
-$color-heading-link-hover: #c93756 !default;
 $color-body-text: #1c1e2a !default;
 $color-shade: #424c50 !default;
 $color-quote-text: #50616d !default;
 $color-quotation-mark: #758a99 !default;
 $color-body-link: #9d2933 !default;
+$color-heading-link: #9d2933 !default;
+$color-heading-link-hover: #c93756 !default;
 $color-body-link-hover: #c93756 !default;
+$color-heading-red-head: #ff2121 !default;
 $color-background: #ffffff !default;
 $color-paper: #fffefa !default;
 $color-newspaper: #f0f0f4 !default;
 $color-text-selection: #e0f0e9 !default;
-$color-marker: #faff72 !default;
 $color-marker-underline: #ffc773 !default;
+$color-marker: #faff72 !default;
 
 // document
 $document-padding: 10%;

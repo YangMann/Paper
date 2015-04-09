@@ -83,6 +83,7 @@ body {
 
 .vertical {
   writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
   h1, h2, h3, h4, h5, h6 {
     padding-top: 0;
@@ -94,6 +95,7 @@ body {
 
   .lr {
     writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
     -webkit-writing-mode: vertical-lr;
   }
 }

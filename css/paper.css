@@ -48,10 +48,10 @@ body { background-color: #ffffff; font-family: "Source Han Sans", "Hiragino Sans
 
 @media only screen and (min-width: 940px) { .hidden-desktop { display: none !important; } }
 
-.vertical { writing-mode: vertical-rl; -webkit-writing-mode: vertical-rl; }
+.vertical { writing-mode: vertical-rl; -ms-writing-mode: tb-rl; -webkit-writing-mode: vertical-rl; }
 .vertical h1, .vertical h2, .vertical h3, .vertical h4, .vertical h5, .vertical h6 { padding-top: 0; padding-bottom: 0; }
 .vertical p { margin-bottom: 0; }
-.vertical .lr { writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr; }
+.vertical .lr { writing-mode: vertical-lr; -ms-writing-mode: tb-lr; -webkit-writing-mode: vertical-lr; }
 
 h1, h2, h3, h4, h5, h6 { font-family: "Source Han Sans", "Hiragino Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif; font-weight: 200; color: #161823; text-rendering: optimizeLegibility; padding-top: 0.252em; line-height: 1.0665em; padding-bottom: 0.252em; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #9d2933; }
@@ -869,7 +869,7 @@ abbr { border-bottom: 1px dotted; font-variant: normal; cursor: help; }
 .document .document-title { text-align: center; margin-bottom: 1.0665em; }
 .document.document-red-head { background-color: #ffffff; }
 .document.document-red-head .document-title { padding-bottom: 1.0665em; margin-bottom: 1.3185em; border-bottom: 2px #ff2121 solid; }
-.document.document-red-head .document-title, .document.document-red-head .document-title h1, .document.document-red-head .document-title h2, .document.document-red-head .document-title h3, .document.document-red-head .document-title h4, .document.document-red-head .document-title h5, .document.document-red-head .document-title h6 { font-family: SimSong, serif; font-weight: 600; }
+.document.document-red-head .document-title, .document.document-red-head .document-title h1, .document.document-red-head .document-title h2, .document.document-red-head .document-title h3, .document.document-red-head .document-title h4, .document.document-red-head .document-title h5, .document.document-red-head .document-title h6 { font-family: Arial, Helvetica, tahoma, verdana, "??", SimSun, "????", STXihei, sans-serif; font-weight: 600; }
 .document.document-image { padding: 0; }
 .document.document-image .document-title { margin-bottom: 0; position: relative; }
 .document.document-image .document-title img { display: block; width: 100%; }
@@ -881,5 +881,9 @@ abbr { border-bottom: 1px dotted; font-variant: normal; cursor: help; }
 .document.document-newspaper .document-content { -moz-column-count: 2; -webkit-column-count: 2; column-count: 2; }
 @media only screen and (max-width: 400px) { .document.document-newspaper .document-content { -moz-column-count: 1; -webkit-column-count: 1; column-count: 1; } }
 .document.document-newspaper .document-content p { margin-bottom: 0; }
-.document.vertical { max-height: 400px; }
-.document.vertical .document-title { text-align: start; }
+.document.vertical article { font-size: 19.2px; font-size: 1.2rem; }
+.document.vertical, .document.vertical h1, .document.vertical h2, .document.vertical h3, .document.vertical h4, .document.vertical h5, .document.vertical h6 { font-family: Georgia, "Times New Roman", "FangSong", "??", STFangSong, "????", serif; }
+.document.vertical .document-title { text-align: left; text-align: start; }
+.document.vertical .document-content { position: relative; padding: 0.5em 0; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjxzdG9wIG9mZnNldD0iMXB4IiBzdG9wLWNvbG9yPSIjZmZmZWZhIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZWZhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'); background-size: 100%; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #000000), color-stop(1px, #fffefa), color-stop(100%, #fffefa)); background-image: -moz-linear-gradient(left, #000000 0%, #fffefa 1px, #fffefa 2.5em); background-image: -webkit-linear-gradient(left, #000000 0%, #fffefa 1px, #fffefa 2.5em); background-image: linear-gradient(to right, #000000 0%, #fffefa 1px, #fffefa 2.5em); -moz-background-size: 2.5em 100%; -o-background-size: 2.5em 100%; -webkit-background-size: 2.5em 100%; background-size: 2.5em 100%; }
+.document.vertical .document-content p { line-height: 40px; }
+.document.vertical .document-content:before { content: ''; position: absolute; width: 100%; height: 100%; left: 0; top: 0; border: 1px solid #000000; }

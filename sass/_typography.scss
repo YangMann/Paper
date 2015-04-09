@@ -133,7 +133,7 @@ li {
   @include padding-trailer($rhythm-spacing);
 }
 
-// Chinese typography specifications, inspired by typo.css http://typo.sofi.sh/
+// Chinese typography specifications, inspired by typo.css http://typo.sofi.sh/ TODO: Vertical mode
 blockquote {
   color: $color-quote-text;
   margin: rhythm($rhythm-line-height, $base-font-size) 4em rhythm($rhythm-line-height, $base-font-size) 4em;

@@ -95,7 +95,8 @@
       position: relative;
       padding: 0.5em 0;
       p {
-        line-height: 40px;
+        line-height: $document-vertical-line-height;
+        font-size: $document-vertical-line-height * 0.618;
       }
       @include background-image(linear-gradient(left, $color-black 0, $color-paper 1px, $color-paper 2.5em));
       @include background-size(2.5em 100%);

@@ -2,9 +2,11 @@
 @import "variables/settings";
 @import "mixins/z-depth";
 @import "mixins/media-queries";
+@import "mixins/font-size";
 @import "compass/typography/vertical_rhythm";
 @import "compass/css3/columns";
 @import "compass/css3/images";
+@import "compass/css3/background-size";
 
 // document styles
 .document {

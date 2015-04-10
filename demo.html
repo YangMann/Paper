@@ -13,6 +13,9 @@
       #grid .col {
           border: 1px solid;
       }
+      form.row .row {
+          margin-bottom: 1em;
+      }
     </style>
     <div class="container">
       <div id="heading">
@@ -178,8 +181,32 @@
           </div>
         </div>
       </div>
+      <div id="form">
+        <form class="row">
+          <div class="row">
+            <div class="input-area col span-1-2 span-tablet-vertical-1-1">
+              <input placeholder="占位符">
+            </div>
+            <div class="input-area col span-1-2 span-tablet-vertical-1-1">
+              <input id="input_name" type="text">
+              <label for="input_name">姓名</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-area col span-1-2 span-tablet-vertical-1-1">
+              <input id="input_addr" placeholder="占位符">
+              <label for="input_addr">地址</label>
+            </div>
+            <div class="input-area col span-1-2 span-tablet-vertical-1-1">
+              <input id="input_disabled" placeholder="输入被禁用" disabled>
+              <label for="input_disabled">禁用</label>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="js/vendor/jquery-2.1.3.min.js"></script>
     <script src="js/typography.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

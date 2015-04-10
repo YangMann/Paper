@@ -75,3 +75,29 @@ Using `.document` will give your article an awesome layout. We also provide diff
 `.document-image`, `.document-newspaper`. See the demo page for detailed usage. 
 #### Vertical documents
 Try out `.document.vertical` and prepare to get surprised! 
+
+### Forms
+See demo page for examples.
+
+    <form>
+      <div class="row">
+        <div class="input-area col span-1-2">
+          <input placeholder="占位符">
+        </div>
+        <div class="input-area col span-1-2">
+          <input id="input_name" type="text">
+          <label for="input_name">姓名</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-area col span-1-2">
+          <input id="input_addr" placeholder="占位符">
+          <label for="input_addr">地址</label>
+        </div>
+        <div class="input-area col span-1-2">
+          <input id="input_disabled" placeholder="输入被禁用" disabled>
+          <label for="input_disabled">禁用</label>
+        </div>
+      </div>
+    </form>
+    

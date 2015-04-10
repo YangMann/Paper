@@ -1,1 +1,72 @@
+@import "variables/settings";
+@import "compass/css3/user-interface";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import "compass/css3/box-shadow";
+
 // form styles
+input, textarea {
+  @include input-placeholder {
+    color: $color-placeholder;
+  }
+  color: $color-body-text;
+  font-family: inherit;
+  font-weight: $font-weight-body;
+  font-size: $large;
+  background-color: transparent;
+  border: 1px solid $color-shade;
+  line-height: $xlarge;
+  padding: 0 0.618em;
+  width: 100%;
+  outline: none;
+  @include transition(all .2s);
+
+  // focused
+  &:focus:not([readonly]) {
+    border-color: transparent;
+    background-color: $color-paper;
+    @include box-shadow(0 1px 0 0 $color-body-text);
+    &+label {
+      @include transform(translateY(-100%));
+      font-size: $medium;
+      line-height: $large;
+    }
+  }
+
+  // disabled
+  &:disabled, &[readonly="readonly"] {
+    color: $color-disabled-input;
+    border-color: $color-disabled-input;
+    @include input-placeholder {
+      color: $color-disabled-input;
+    }
+  }
+  // Disabled label style
+  &:disabled+label, &[readonly="readonly"]+label {
+    color: $color-disabled-input;
+  }
+}
+
+label {
+  .active & {
+    @include transform(translateY(-100%));
+    font-size: $medium;
+    line-height: $large;
+  }
+  font-size: $large;
+  color: $color-placeholder;
+  @include transition(all .3s);
+  position: absolute;
+  margin-left: 0.618 * $large;
+  line-height: $xlarge;
+  left: 0;
+  .col & {
+    left: $gutter-width-px / 2 + 1px; // border-width
+  }
+  top: 1px; // border-width
+}
+
+.input-area {
+  position: relative;
+  margin-top: $large;
+}

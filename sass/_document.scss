@@ -99,7 +99,7 @@
         line-height: $document-vertical-line-height;
         font-size: $document-vertical-line-height * 0.618;
       }
-      @include background-image(linear-gradient(left, $color-black 0, $color-paper 1px, $color-paper 2.5em));
+      @include background-image(linear-gradient(left, $color-hei 0, $color-paper 1px, $color-paper 2.5em));
       @include background-size(2.5em 100%);
       &:before {
         content: '';
@@ -108,7 +108,7 @@
         height: 100%;
         left: 0;
         top: 0;
-        border: 1px solid $color-black;
+        border: 1px solid $color-hei;
       }
     }
   }

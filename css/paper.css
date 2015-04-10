@@ -887,3 +887,23 @@ abbr { border-bottom: 1px dotted; font-variant: normal; cursor: help; }
 .document.vertical .document-content { position: relative; padding: 0.5em 0; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjxzdG9wIG9mZnNldD0iMXB4IiBzdG9wLWNvbG9yPSIjZmZmZWZhIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZWZhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'); background-size: 100%; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #000000), color-stop(1px, #fffefa), color-stop(100%, #fffefa)); background-image: -moz-linear-gradient(left, #000000 0%, #fffefa 1px, #fffefa 2.5em); background-image: -webkit-linear-gradient(left, #000000 0%, #fffefa 1px, #fffefa 2.5em); background-image: linear-gradient(to right, #000000 0%, #fffefa 1px, #fffefa 2.5em); -moz-background-size: 2.5em 100%; -o-background-size: 2.5em 100%; -webkit-background-size: 2.5em 100%; background-size: 2.5em 100%; }
 .document.vertical .document-content p { line-height: 40px; font-size: 24.72px; }
 .document.vertical .document-content:before { content: ''; position: absolute; width: 100%; height: 100%; left: 0; top: 0; border: 1px solid #000000; }
+
+input, textarea { color: #1c1e2a; font-family: inherit; font-weight: 300; font-size: 26px; background-color: transparent; border: 1px solid #424c50; line-height: 42px; padding: 0 0.618em; width: 100%; outline: none; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
+input:-moz-placeholder, textarea:-moz-placeholder { color: #424c50; }
+input::-moz-placeholder, textarea::-moz-placeholder { color: #424c50; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #424c50; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #424c50; }
+input:focus:not([readonly]), textarea:focus:not([readonly]) { border-color: transparent; background-color: #fffefa; -moz-box-shadow: 0 1px 0 0 #1c1e2a; -webkit-box-shadow: 0 1px 0 0 #1c1e2a; box-shadow: 0 1px 0 0 #1c1e2a; }
+input:focus:not([readonly]) + label, textarea:focus:not([readonly]) + label { -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -webkit-transform: translateY(-100%); transform: translateY(-100%); font-size: 18px; line-height: 26px; }
+input:disabled, input[readonly="readonly"], textarea:disabled, textarea[readonly="readonly"] { color: #758a99; border-color: #758a99; }
+input:disabled:-moz-placeholder, input[readonly="readonly"]:-moz-placeholder, textarea:disabled:-moz-placeholder, textarea[readonly="readonly"]:-moz-placeholder { color: #758a99; }
+input:disabled::-moz-placeholder, input[readonly="readonly"]::-moz-placeholder, textarea:disabled::-moz-placeholder, textarea[readonly="readonly"]::-moz-placeholder { color: #758a99; }
+input:disabled:-ms-input-placeholder, input[readonly="readonly"]:-ms-input-placeholder, textarea:disabled:-ms-input-placeholder, textarea[readonly="readonly"]:-ms-input-placeholder { color: #758a99; }
+input:disabled::-webkit-input-placeholder, input[readonly="readonly"]::-webkit-input-placeholder, textarea:disabled::-webkit-input-placeholder, textarea[readonly="readonly"]::-webkit-input-placeholder { color: #758a99; }
+input:disabled + label, input[readonly="readonly"] + label, textarea:disabled + label, textarea[readonly="readonly"] + label { color: #758a99; }
+
+label { font-size: 26px; color: #424c50; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; position: absolute; margin-left: 16.068px; line-height: 42px; left: 0; top: 1px; }
+.active label { -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -webkit-transform: translateY(-100%); transform: translateY(-100%); font-size: 18px; line-height: 26px; }
+.col label { left: 11px; }
+
+.input-area { position: relative; margin-top: 26px; }

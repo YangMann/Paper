@@ -56,24 +56,40 @@ $device-width-large-screen: 2880px;
 $page-width: $row-width-max;
 
 // colors
-$color-black: #000000 !default;
-$color-heading-text: #161823 !default;
-$color-body-text: #1c1e2a !default;
-$color-shade: #424c50 !default;
-$color-quote-text: #50616d !default;
-$color-quotation-mark: #758a99 !default;
-$color-body-link: #9d2933 !default;
-$color-heading-link: #9d2933 !default;
-$color-heading-link-hover: #c93756 !default;
-$color-body-link-hover: #c93756 !default;
-$color-heading-red-head: #ff2121 !default;
-$color-background: #ffffff !default;
-$color-paper: #fffefa !default;
-$color-newspaper: #f0f0f4 !default;
-$color-text-selection: #e0f0e9 !default;
-$color-marker-underline: #ffc773 !default;
-$color-marker: #faff72 !default;
+$color-hei: #000000 !default; // ? black
+$color-qihei: #161823 !default; // ?? almost black
+$color-shenhei: #1c1e2a !default; // ?? quite black
+$color-yaqing: #424c50 !default; // ?? the color of crow's feather
+$color-mose: #50616d !default; // ?? Chinese ink color
+$color-mohui: #758a99 !default; // ?? ink & gray
+$color-yanzhi: #9d2933 !default; // ?? coccineous
+$color-yingtao: #c93756 !default; // ?? cherry
+$color-dahong: #ff2121 !default; // ?? bright red
+$color-jingbai: #ffffff !default; // ?? pure white
+$color-zhi: #fffefa !default; // ? paper white
+$color-qianbai: #f0f0f4 !default; // ?? lead white
+$color-su: #e0f0e9 !default; // ? no color
+$color-jianghuang: #ffc773 !default; // ?? ginger yellow
+$color-yahuang: #faff72 !default; // ?? color of duckling's feather
 
+$color-heading-text: $color-qihei;
+$color-body-text: $color-shenhei;
+$color-shade: $color-yaqing;
+$color-placeholder: $color-yaqing;
+$color-quote-text: $color-mose;
+$color-quotation-mark: $color-mohui;
+$color-disabled-input: $color-mohui;
+$color-body-link: $color-yanzhi;
+$color-heading-link: $color-yanzhi;
+$color-heading-link-hover: $color-yingtao;
+$color-body-link-hover: $color-yingtao;
+$color-heading-red-head: $color-dahong;
+$color-background: $color-jingbai;
+$color-paper: $color-zhi;
+$color-newspaper: $color-qianbai;
+$color-text-selection: $color-su;
+$color-marker-underline: $color-jianghuang;
+$color-marker: $color-yahuang;
 // document
 $document-padding: 10%;
 $document-vertical-line-height: 40px;

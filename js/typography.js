@@ -1,4 +1,4 @@
-function emphasize () {
+function emphasize() {
     'use strict';
     $('em').each(function () {
         var tmp = $(this).text();
@@ -11,6 +11,6 @@ function emphasize () {
     });
 }
 
-$(function() {
+$(function () {
     emphasize();
 });

@@ -91,6 +91,7 @@ $color-newspaper: $color-qianbai;
 $color-text-selection: $color-su;
 $color-marker-underline: $color-jianghuang;
 $color-marker: $color-yahuang;
+
 // document
-$document-padding: 10%;
-$document-vertical-line-height: 40px;
+$document-padding: 10% !default;
+$document-vertical-line-height: 40px !default;

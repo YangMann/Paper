@@ -100,4 +100,11 @@ See demo page for examples.
         </div>
       </div>
     </form>
-    
+
+#### Textarea
+Textareas can resize themselves! 
+
+    <div class="input-area">
+      <textarea id="input_textarea" class="auto-resize"></textarea>
+      <label for="input_textarea">输入文本框</label>
+    </div>

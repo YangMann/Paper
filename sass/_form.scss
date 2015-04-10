@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "variables/settings";
+@import "mixins/responsive-font-weight";
 @import "compass/css3/user-interface";
 @import "compass/css3/transition";
 @import "compass/css3/transform";
@@ -12,7 +13,7 @@ input, textarea {
   }
   color: $color-body-text;
   font-family: inherit;
-  font-weight: $font-weight-body;
+  @include responsive-body-font-weight;
   font-size: $large;
   background-color: transparent;
   border: 1px solid $color-shade;
@@ -48,6 +49,15 @@ input, textarea {
   }
 }
 
+textarea {
+  min-height: 3 * $xlarge;
+  // auto-resize textarea
+  &.auto-resize {
+    overflow-y: hidden;
+    resize: none;
+  }
+}
+
 label {
   .active & {
     @include transform(translateY(-100%));
@@ -70,4 +80,15 @@ label {
 .input-area {
   position: relative;
   margin-top: $large;
+}
+
+.hiddenfortextarea {
+  display: none;
+  //padding-top: (1em / 0.618); // TODO prevent jump?
+  white-space: pre-wrap;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: $large;
+  line-height: $xlarge;
 }

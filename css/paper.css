@@ -894,6 +894,7 @@ input:-moz-placeholder, textarea:-moz-placeholder { color: #424c50; }
 input::-moz-placeholder, textarea::-moz-placeholder { color: #424c50; }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #424c50; }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #424c50; }
+@media only screen and (max-width: 767px) { input, textarea { font-weight: 400; } }
 input:focus:not([readonly]), textarea:focus:not([readonly]) { border-color: transparent; background-color: #fffefa; -moz-box-shadow: 0 1px 0 0 #1c1e2a; -webkit-box-shadow: 0 1px 0 0 #1c1e2a; box-shadow: 0 1px 0 0 #1c1e2a; }
 input:focus:not([readonly]) + label, textarea:focus:not([readonly]) + label { -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -webkit-transform: translateY(-100%); transform: translateY(-100%); font-size: 18px; line-height: 26px; }
 input:disabled, input[readonly="readonly"], textarea:disabled, textarea[readonly="readonly"] { color: #758a99; border-color: #758a99; }
@@ -903,8 +904,13 @@ input:disabled:-ms-input-placeholder, input[readonly="readonly"]:-ms-input-place
 input:disabled::-webkit-input-placeholder, input[readonly="readonly"]::-webkit-input-placeholder, textarea:disabled::-webkit-input-placeholder, textarea[readonly="readonly"]::-webkit-input-placeholder { color: #758a99; }
 input:disabled + label, input[readonly="readonly"] + label, textarea:disabled + label, textarea[readonly="readonly"] + label { color: #758a99; }
 
+textarea { min-height: 126px; }
+textarea.auto-resize { overflow-y: hidden; resize: none; }
+
 label { font-size: 26px; color: #424c50; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; position: absolute; margin-left: 16.068px; line-height: 42px; left: 0; top: 1px; }
 .active label { -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -webkit-transform: translateY(-100%); transform: translateY(-100%); font-size: 18px; line-height: 26px; }
 .col label { left: 11px; }
 
 .input-area { position: relative; margin-top: 26px; }
+
+.hiddenfortextarea { display: none; white-space: pre-wrap; -ms-word-wrap: break-word; word-wrap: break-word; overflow-wrap: break-word; font-size: 26px; line-height: 42px; }

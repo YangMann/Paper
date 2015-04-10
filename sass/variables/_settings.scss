@@ -1,8 +1,8 @@
 // typography
 $font-family: "Source Han Sans", "Hiragino Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
-$font-family-song: Arial, Helvetica, tahoma, verdana, "??", SimSun, "????", STXihei, sans-serif;
-$font-family-fangsong: Georgia, "Times New Roman", "FangSong", "??", STFangSong, "????", serif;
-$font-family-kaiti: Georgia, "Times New Roman", "KaiTi", "??", STKaiti, "????", serif;
+$font-family-song: Arial, Helvetica, tahoma, verdana, "宋体", SimSun, "华文细黑", STXihei, sans-serif;
+$font-family-fangsong: Georgia, "Times New Roman", "FangSong", "仿宋", STFangSong, "华文仿宋", serif;
+$font-family-kaiti: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
 // replace with your heading fonts
 $font-family-heading: $font-family;
 
@@ -56,21 +56,21 @@ $device-width-large-screen: 2880px;
 $page-width: $row-width-max;
 
 // colors
-$color-hei: #000000 !default; // ? black
-$color-qihei: #161823 !default; // ?? almost black
-$color-shenhei: #1c1e2a !default; // ?? quite black
-$color-yaqing: #424c50 !default; // ?? the color of crow's feather
-$color-mose: #50616d !default; // ?? Chinese ink color
-$color-mohui: #758a99 !default; // ?? ink & gray
-$color-yanzhi: #9d2933 !default; // ?? coccineous
-$color-yingtao: #c93756 !default; // ?? cherry
-$color-dahong: #ff2121 !default; // ?? bright red
-$color-jingbai: #ffffff !default; // ?? pure white
-$color-zhi: #fffefa !default; // ? paper white
-$color-qianbai: #f0f0f4 !default; // ?? lead white
-$color-su: #e0f0e9 !default; // ? no color
-$color-jianghuang: #ffc773 !default; // ?? ginger yellow
-$color-yahuang: #faff72 !default; // ?? color of duckling's feather
+$color-hei: #000000 !default; // 黑 black
+$color-qihei: #161823 !default; // 漆黑 almost black
+$color-shenhei: #1c1e2a !default; // 深黑 quite black
+$color-yaqing: #424c50 !default; // 鸦青 the color of crow's feather
+$color-mose: #50616d !default; // 墨色 Chinese ink color
+$color-mohui: #758a99 !default; // 墨灰 ink & gray
+$color-yanzhi: #9d2933 !default; // 胭脂 coccineous
+$color-yingtao: #c93756 !default; // 樱桃 cherry
+$color-dahong: #ff2121 !default; // 大红 bright red
+$color-jingbai: #ffffff !default; // 精白 pure white
+$color-zhi: #fffefa !default; // 纸 paper white
+$color-qianbai: #f0f0f4 !default; // 铅白 lead white
+$color-su: #e0f0e9 !default; // 素 no color
+$color-jianghuang: #ffc773 !default; // 姜黄 ginger yellow
+$color-yahuang: #faff72 !default; // 鸭黄 color of duckling's feather
 
 $color-heading-text: $color-qihei;
 $color-body-text: $color-shenhei;

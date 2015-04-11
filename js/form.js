@@ -1,5 +1,7 @@
+var input = 'input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea';
+
 function updateInputStatus() {
-    $('input, textarea').each(function (index, el) {
+    $(input).each(function (index, el) {
         if ($(el).val().length > 0 || $(this).attr('placeholder') !== undefined) {
             $(this).parent('.input-area').addClass('active');
         } else {
@@ -13,10 +15,10 @@ function updateInputStatus() {
 //}
 
 // Handle HTML5 autofocus
-$('input[autofocus]').parent('.input-area').addClass('active');
+$('input[autofocus]:not([type=checkbox]):not([type=radio]):not([type=range])').parent('.input-area').addClass('active');
 
 // Add active if form auto complete
-$(document).on('change', 'input, textarea', function () {
+$(document).on('change', input, function () {
     if ($(this).val().length !== 0 || $(this).attr('placeholder') !== undefined) {
         $(this).parent('.input-area').addClass('active');
     }
@@ -32,7 +34,7 @@ $(document).ready(function () {
 $(document).on('reset', function (e) {
     if ($(e.target).is('form')) {
         //$(this).find('input').removeClass('valid').removeClass('invalid');
-        $(this).find('input, textarea').parent('.input-area').removeClass('active');
+        $(this).find(input).parent('.input-area').removeClass('active');
 
         // Reset select
         //$(this).find('select.initialized').each(function () {
@@ -42,7 +44,7 @@ $(document).on('reset', function (e) {
     }
 });
 
-$(document).on('blur', 'input, textarea', function () {
+$(document).on('blur', input, function () {
     if ($(this).val().length === 0 && $(this).attr('placeholder') === undefined) {
         $(this).parent('.input-area').removeClass('active');
     }

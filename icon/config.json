@@ -1,0 +1,24 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "c8672be33e5400e11dffe1abb2064c21",
+      "css": "untitled-2",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M510 46.2C262.2 46.2 61.4 247.1 61.4 494.8S262.2 943.3 510 943.3 958.5 742.6 958.5 494.8 757.8 46.2 510 46.2ZM510 902C285 902 102.7 719.7 102.7 494.8 102.7 269.9 285 87.5 510 87.5S917.3 269.9 917.3 494.8C917.3 719.7 735 902 510 902Z",
+        "width": 1011
+      },
+      "search": [
+        "untitled-2"
+      ]
+    }
+  ]
+}

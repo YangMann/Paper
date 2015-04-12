@@ -918,11 +918,10 @@ label { font-size: 26px; color: #424c50; -moz-transition: all 0.3s; -o-transitio
 
 .hiddenfortextarea { display: none; white-space: pre-wrap; -ms-word-wrap: break-word; word-wrap: break-word; overflow-wrap: break-word; font-size: 26px; line-height: 42px; }
 
-[type=checkbox] { -moz-appearance: none; -webkit-appearance: none; width: 42px; height: 42px; border: 1px solid #424c50; border-radius: 0; background: #ffffff; position: absolute; margin: 0; }
-[type=checkbox] + label { position: relative; line-height: 42px; height: 42px; display: inline-block; left: 42px; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
-[type=checkbox] + label:before, [type=checkbox] + label:after { content: ''; position: absolute; top: 0; width: 0; height: 42px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
-[type=checkbox] + label:before { border-left: 1px solid #424c50; left: -58.068px; }
-[type=checkbox] + label:after { border-left: 1px solid #424c50; left: -17.068px; }
-[type=checkbox]:checked { border-color: transparent; }
-[type=checkbox]:checked + label:before { -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
-[type=checkbox]:checked + label:after { -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+[type=radio], [type=checkbox] { -moz-appearance: none; -webkit-appearance: none; width: 42px; height: 42px; position: absolute; margin: 0; visibility: hidden; }
+[type=radio] + label, [type=checkbox] + label { cursor: pointer; position: relative; line-height: 42px; height: 42px; display: inline-block; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
+[type=radio] + label:before, [type=checkbox] + label:before { content: ''; position: absolute; top: 0; width: 40px; height: 40px; border: 1px solid #424c50; left: -16.068px; }
+[type=radio]:checked, [type=checkbox]:checked { border-color: transparent; }
+[type=radio]:checked + label:before, [type=checkbox]:checked + label:before { width: 38px; height: 38px; border: 2px #9d2933 solid; }
+
+[type=radio] + label:before { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }

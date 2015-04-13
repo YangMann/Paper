@@ -889,20 +889,21 @@ abbr { border-bottom: 1px dotted; font-variant: normal; cursor: help; }
 .document.vertical .document-content p { line-height: 40px; font-size: 24.72px; }
 .document.vertical .document-content:before { content: ''; position: absolute; width: 100%; height: 100%; left: 0; top: 0; border: 1px solid #000000; }
 
-input, textarea { color: #1c1e2a; border: 1px solid #424c50; outline: none; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
-input:disabled, input[readonly="readonly"], textarea:disabled, textarea[readonly="readonly"] { color: #758a99; border-color: #758a99; }
-input:disabled:-moz-placeholder, input[readonly="readonly"]:-moz-placeholder, textarea:disabled:-moz-placeholder, textarea[readonly="readonly"]:-moz-placeholder { color: #758a99 !important; }
-input:disabled::-moz-placeholder, input[readonly="readonly"]::-moz-placeholder, textarea:disabled::-moz-placeholder, textarea[readonly="readonly"]::-moz-placeholder { color: #758a99 !important; }
-input:disabled:-ms-input-placeholder, input[readonly="readonly"]:-ms-input-placeholder, textarea:disabled:-ms-input-placeholder, textarea[readonly="readonly"]:-ms-input-placeholder { color: #758a99 !important; }
-input:disabled::-webkit-input-placeholder, input[readonly="readonly"]::-webkit-input-placeholder, textarea:disabled::-webkit-input-placeholder, textarea[readonly="readonly"]::-webkit-input-placeholder { color: #758a99 !important; }
-input:disabled + label, input[readonly="readonly"] + label, textarea:disabled + label, textarea[readonly="readonly"] + label { color: #758a99; }
+input, textarea, select { color: #1c1e2a; border: 1px solid #424c50; outline: none; -moz-transition: all 0.2s; -o-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
+input:disabled, input[readonly="readonly"], textarea:disabled, textarea[readonly="readonly"], select:disabled, select[readonly="readonly"] { color: #758a99; border-color: #758a99; }
+input:disabled:-moz-placeholder, input[readonly="readonly"]:-moz-placeholder, textarea:disabled:-moz-placeholder, textarea[readonly="readonly"]:-moz-placeholder, select:disabled:-moz-placeholder, select[readonly="readonly"]:-moz-placeholder { color: #758a99 !important; }
+input:disabled::-moz-placeholder, input[readonly="readonly"]::-moz-placeholder, textarea:disabled::-moz-placeholder, textarea[readonly="readonly"]::-moz-placeholder, select:disabled::-moz-placeholder, select[readonly="readonly"]::-moz-placeholder { color: #758a99 !important; }
+input:disabled:-ms-input-placeholder, input[readonly="readonly"]:-ms-input-placeholder, textarea:disabled:-ms-input-placeholder, textarea[readonly="readonly"]:-ms-input-placeholder, select:disabled:-ms-input-placeholder, select[readonly="readonly"]:-ms-input-placeholder { color: #758a99 !important; }
+input:disabled::-webkit-input-placeholder, input[readonly="readonly"]::-webkit-input-placeholder, textarea:disabled::-webkit-input-placeholder, textarea[readonly="readonly"]::-webkit-input-placeholder, select:disabled::-webkit-input-placeholder, select[readonly="readonly"]::-webkit-input-placeholder { color: #758a99 !important; }
+input:disabled + label, input[readonly="readonly"] + label, textarea:disabled + label, textarea[readonly="readonly"] + label, select:disabled + label, select[readonly="readonly"] + label { color: #758a99; }
 
-input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea { font-family: inherit; font-weight: 300; font-size: 26px; background-color: transparent; line-height: 42px; padding: 0 0.618em; width: 100%; }
-input:not([type=checkbox]):not([type=radio]):not([type=range]):-moz-placeholder, textarea:-moz-placeholder { color: #424c50; }
-input:not([type=checkbox]):not([type=radio]):not([type=range])::-moz-placeholder, textarea::-moz-placeholder { color: #424c50; }
-input:not([type=checkbox]):not([type=radio]):not([type=range]):-ms-input-placeholder, textarea:-ms-input-placeholder { color: #424c50; }
-input:not([type=checkbox]):not([type=radio]):not([type=range])::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #424c50; }
-@media only screen and (max-width: 767px) { input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea { font-weight: 400; } }
+input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea, select { font-family: inherit; font-weight: 300; font-size: 26px; background-color: transparent; line-height: 42px; padding: 0 0.618em; width: 100%; }
+input:not([type=checkbox]):not([type=radio]):not([type=range]):-moz-placeholder, textarea:-moz-placeholder, select:-moz-placeholder { color: #424c50; }
+input:not([type=checkbox]):not([type=radio]):not([type=range])::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder { color: #424c50; }
+input:not([type=checkbox]):not([type=radio]):not([type=range]):-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder { color: #424c50; }
+input:not([type=checkbox]):not([type=radio]):not([type=range])::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder { color: #424c50; }
+@media only screen and (max-width: 767px) { input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea, select { font-weight: 400; } }
+
 input:not([type=checkbox]):not([type=radio]):not([type=range]):focus:not([readonly]), textarea:focus:not([readonly]) { border-color: transparent; background-color: #fffefa; -moz-box-shadow: 0 1px 0 0 #1c1e2a; -webkit-box-shadow: 0 1px 0 0 #1c1e2a; box-shadow: 0 1px 0 0 #1c1e2a; }
 input:not([type=checkbox]):not([type=radio]):not([type=range]):focus:not([readonly]) + label, textarea:focus:not([readonly]) + label { -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -webkit-transform: translateY(-100%); transform: translateY(-100%); font-size: 18px; line-height: 26px; }
 

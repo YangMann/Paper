@@ -9,7 +9,7 @@
 @import "compass/css3/appearance";
 
 // form styles
-input, textarea {
+input, textarea, select {
   color: $color-body-text;
   border: $border-width solid $color-shade;
   outline: none;
@@ -30,7 +30,7 @@ input, textarea {
 }
 
 input:not([type=checkbox]):not([type=radio]):not([type=range]),
-textarea {
+textarea, select {
   @include input-placeholder {
     color: $color-placeholder;
   }
@@ -41,7 +41,10 @@ textarea {
   line-height: $xlarge;
   padding: 0 0.618em;
   width: 100%;
+}
 
+input:not([type=checkbox]):not([type=radio]):not([type=range]),
+textarea {
   // focused
   &:focus:not([readonly]) {
     border-color: transparent;
@@ -144,4 +147,9 @@ label {
 // radio
 [type=radio]+label:before {
   @include border-radius(50%);
+}
+
+// select
+select {
+
 }

@@ -203,6 +203,26 @@
             </div>
           </div>
           <div class="row">
+            <div class="input-area select col span-1-2 span-tablet-vertical-1-1">
+              <!--.placeholder 请选择-->
+              <!--.options-->
+              <!--    .selected(data-option=1) 选项一-->
+              <!--    div(data-option=2) 选项二-->
+              <select id="select_1">
+                <option value="" disabled selected>请选择</option>
+                <option value="1">选项一</option>
+                <option value="2">选项二</option>
+              </select>
+            </div>
+            <div class="input-area select col span-1-2 span-tablet-vertical-1-1">
+              <select id="select_1" disabled>
+                <option value="" disabled selected>选择被禁用</option>
+                <option value="1">选项一</option>
+                <option value="2">选项二</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
             <div class="input-area col span-1-1">
               <textarea id="input_textarea" class="auto-resize"></textarea>
               <label for="input_textarea">输入文本框</label>

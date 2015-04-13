@@ -866,7 +866,7 @@ abbr { border-bottom: 1px dotted; font-variant: normal; cursor: help; }
   .row .col.span-tablet-vertical-12-12 { width: 100%; } }
 .row .col.centered { margin-left: auto; margin-right: auto; float: none; }
 
-.document { position: relative; overflow: hidden; margin-top: 1.0665em; margin-bottom: 1.0665em; background-color: #fffefa; padding: 6.18% 10%; -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+.document { position: relative; overflow: hidden; margin-top: 1.0665em; margin-bottom: 1.0665em; background-color: #fffefa; padding: 6.18% 10%; -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16); -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16); box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16); }
 .document .document-title { text-align: center; margin-bottom: 1.0665em; }
 .document.document-red-head { background-color: #ffffff; }
 .document.document-red-head .document-title { padding-bottom: 1.0665em; margin-bottom: 1.3185em; border-bottom: 2px #ff2121 solid; }

@@ -149,7 +149,108 @@ label {
   @include border-radius(50%);
 }
 
-// select
-select {
+// range
+[type=range] {
+  @include appearance(none);
 
+  // Firefox fix
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+
+  // slider thumb
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: $large - $border-width * 2;
+    width: $large - $border-width * 2;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: $border-width $color-body-text solid;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translateY(-($large - $border-width * 2) / 2);
+    transform: translateY(-($large - $border-width * 2) / 2);
+    &:hover, &:focus, &:active {
+      height: $xlarge; // this is different from -moz numbers! border-width is absurdly omitted here
+      width: $xlarge;
+      -webkit-transform: translateY(-$xlarge / 2);
+      transform: translateY(-$xlarge / 2);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &::-moz-range-thumb {
+    height: $large - $border-width * 2;
+    width: $large - $border-width * 2;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: $border-width $color-body-text solid;
+    cursor: pointer;
+    background-color: transparent;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; // no transition animation in browser tests, why?
+    &:hover, &:focus, &:active {
+      height: $xlarge - $border-width * 2; // this is different with -webkit numbers
+      width: $xlarge - $border-width * 2;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &::-ms-thumb { // hover effects for IE has been removed for jumpy bugs
+    height: $large - $border-width * 2;
+    width: $large - $border-width * 2;
+    border-radius: 50%;
+    border: $border-width $color-body-text solid;
+    cursor: pointer;
+    background-color: transparent;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  // range slider track
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: $border-width;
+    cursor: pointer;
+    background-color: $color-body-text;
+  }
+
+  &::-moz-range-track {
+    width: 100%;
+    height: $border-width;
+    cursor: pointer;
+    background-color: $color-body-text;
+  }
+
+  &::-ms-track {
+    width: 100%;
+    height: $xlarge;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    color: transparent;
+  }
+
+  &::-ms-fill-lower {
+    background: $color-body-text;
+    height: $border-width;
+  }
+
+  &::-ms-fill-upper {
+    background: $color-body-text;
+    height: $border-width;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }

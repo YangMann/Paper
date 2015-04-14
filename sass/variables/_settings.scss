@@ -27,7 +27,7 @@ $rhythm-line-height: 0.711;
 
 // modular-scale settings
 $ms-ratio: $golden;
-$ms-base: 16px 78px;
+$ms-base: 16px, 78px;
 
 // sizing
 @import "modular-scale";

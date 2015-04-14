@@ -926,3 +926,19 @@ label { font-size: 26px; color: #424c50; -moz-transition: all 0.3s; -o-transitio
 [type=radio]:checked + label:before, [type=checkbox]:checked + label:before { width: 38px; height: 38px; border: 2px #9d2933 solid; }
 
 [type=radio] + label:before { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+
+[type=range] { -moz-appearance: none; -webkit-appearance: none; width: 100%; margin-left: 0; margin-right: 0; border: 0; }
+[type=range]::-webkit-slider-thumb { -webkit-appearance: none; height: 24px; width: 24px; -webkit-border-radius: 50%; border-radius: 50%; border: 1px #1c1e2a solid; cursor: pointer; -webkit-transition: all 0.3s; transition: all 0.3s; -webkit-transform: translateY(-12px); transform: translateY(-12px); }
+[type=range]::-webkit-slider-thumb:hover, [type=range]::-webkit-slider-thumb:focus, [type=range]::-webkit-slider-thumb:active { height: 42px; width: 42px; -webkit-transform: translateY(-21px); transform: translateY(-21px); }
+[type=range]::-webkit-slider-thumb:focus { outline: none; }
+[type=range]::-moz-range-thumb { height: 24px; width: 24px; -moz-border-radius: 50%; border-radius: 50%; border: 1px #1c1e2a solid; cursor: pointer; background-color: transparent; -moz-transition: all 0.3s; transition: all 0.3s; }
+[type=range]::-moz-range-thumb:hover, [type=range]::-moz-range-thumb:focus, [type=range]::-moz-range-thumb:active { height: 40px; width: 40px; }
+[type=range]::-moz-range-thumb:focus { outline: none; }
+[type=range]::-ms-thumb { height: 24px; width: 24px; border-radius: 50%; border: 1px #1c1e2a solid; cursor: pointer; background-color: transparent; -ms-transition: all 0.3s; transition: all 0.3s; }
+[type=range]::-ms-thumb:focus { outline: none; }
+[type=range]::-webkit-slider-runnable-track { width: 100%; height: 1px; cursor: pointer; background-color: #1c1e2a; }
+[type=range]::-moz-range-track { width: 100%; height: 1px; cursor: pointer; background-color: #1c1e2a; }
+[type=range]::-ms-track { width: 100%; height: 42px; cursor: pointer; background: transparent; border: 0; color: transparent; }
+[type=range]::-ms-fill-lower { background: #1c1e2a; height: 1px; }
+[type=range]::-ms-fill-upper { background: #1c1e2a; height: 1px; }
+[type=range]:focus { outline: none; }

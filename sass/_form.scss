@@ -145,6 +145,7 @@ label {
       height: $form-box-size - $border-width * 2;
       border: $border-width solid $color-shade;
       left: -$form-box-size;
+      @include transition(all 0.1s);
     }
   }
 

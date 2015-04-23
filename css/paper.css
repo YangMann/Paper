@@ -927,7 +927,7 @@ label { font-size: 26px; color: #424c50; -moz-transition: all 0.3s; -o-transitio
 
 [type=radio], [type=checkbox] { -moz-appearance: none; -webkit-appearance: none; width: 42px; height: 42px; position: absolute; margin: 0; visibility: hidden; }
 [type=radio] + label, [type=checkbox] + label { cursor: pointer; position: relative; line-height: 42px; height: 42px; display: inline-block; margin-left: 42px; padding-left: 8.03444px; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
-[type=radio] + label:before, [type=checkbox] + label:before { content: ''; position: absolute; top: 0; width: 40px; height: 40px; border: 1px solid #424c50; left: -42px; }
+[type=radio] + label:before, [type=checkbox] + label:before { content: ''; position: absolute; top: 0; width: 40px; height: 40px; border: 1px solid #424c50; left: -42px; -moz-transition: all 0.1s; -o-transition: all 0.1s; -webkit-transition: all 0.1s; transition: all 0.1s; }
 [type=radio]:checked, [type=checkbox]:checked { border-color: transparent; }
 [type=radio]:checked + label:before, [type=checkbox]:checked + label:before { border-color: #9d2933; -moz-box-shadow: 0 0 0 1px #9d2933; -webkit-box-shadow: 0 0 0 1px #9d2933; box-shadow: 0 0 0 1px #9d2933; }
 

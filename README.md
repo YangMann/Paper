@@ -4,16 +4,19 @@ Paper, a modern CSS framework with a vintage breeze of China.
 ## Progress
 ### Grid
 - [x] All complete!
+
 ### Typography
 - [x] Basic Chinese typography
 - [x] Horizontal notations
 - [ ] Vertical notations
+
 ### Document
 - [x] Basic document style
 - [x] Redhead
 - [x] Document with image
 - [x] Newspaper
 - [ ] Vertical vintage document
+
 ### Forms
 - [x] Input boxes
 - [x] Select boxes
@@ -22,9 +25,11 @@ Paper, a modern CSS framework with a vintage breeze of China.
 - [x] Range input
 - [ ] Switch
 - [ ] Character Counter
+
 ### Buttons
 - [ ] Basic button style
 - [ ] Button animation
+
 ### Icons
 - [ ] Icon set
 - [ ] Seal (stamp)
@@ -32,11 +37,14 @@ Paper, a modern CSS framework with a vintage breeze of China.
 - [ ] Logo
 - [ ] Icon related components
 - [ ] Preloader
+
 ### Table
 - [ ] Basic table style
+
 ### Navigation
 - [ ] Basic nav style
 - [ ] Basic cucumber style
+
 ### Misc
 - [ ] Media
 - [ ] Javascript components

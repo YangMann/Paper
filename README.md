@@ -1,6 +1,46 @@
 # Paper [![Build Status](https://travis-ci.org/YangMann/Paper.svg?branch=master)](https://travis-ci.org/YangMann/Paper)
 Paper, a modern CSS framework with a vintage breeze of China.
 
+## Progress
+### Grid
+- [x] All complete!
+### Typography
+- [x] Basic Chinese typography
+- [x] Horizontal notations
+- [ ] Vertical notations
+### Document
+- [x] Basic document style
+- [x] Redhead
+- [x] Document with image
+- [x] Newspaper
+- [ ] Vertical vintage document
+### Forms
+- [x] Input boxes
+- [x] Select boxes
+- [x] Textarea
+- [ ] Search boxes
+- [x] Range input
+- [ ] Switch
+- [ ] Character Counter
+### Buttons
+- [ ] Basic button style
+- [ ] Button animation
+### Icons
+- [ ] Icon set
+- [ ] Seal (stamp)
+- [ ] Textures (waves)
+- [ ] Logo
+- [ ] Icon related components
+- [ ] Preloader
+### Table
+- [ ] Basic table style
+### Navigation
+- [ ] Basic nav style
+- [ ] Basic cucumber style
+### Misc
+- [ ] Media
+- [ ] Javascript components
+
 ## Requirements
 Paper css & js files are ready for use. If you want to compile from source, you need to install Ruby (1.9.3 is preferred, 2.0+ is compatible).
 

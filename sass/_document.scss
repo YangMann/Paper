@@ -14,7 +14,7 @@
   overflow: hidden;
   @include rhythm-margins($rhythm-line-height);
   background-color: $color-paper;
-  padding: 0.618*$document-padding $document-padding;
+  padding: $document-padding/$golden $document-padding;
   @include z-depth-1;
 
   .document-title {
@@ -49,7 +49,7 @@
       .document-title-text {
         position: absolute;
         left: 10%;
-        bottom: 10% * 0.618;
+        bottom: 10% / $golden;
         max-width: 100% - 10% * 2;
         @include rhythm-padding($rhythm-spacing);
         padding-left: 2em;
@@ -61,7 +61,7 @@
       }
     }
     .document-content {
-      padding: 0 $document-padding $document-padding*0.618 $document-padding;
+      padding: 0 $document-padding $document-padding/$golden $document-padding;
       @include padding-leader($rhythm-line-height);
     }
   }
@@ -100,7 +100,7 @@
       padding: 0.5em 0;
       p {
         line-height: $document-vertical-line-height;
-        font-size: $document-vertical-line-height * 0.618;
+        font-size: $document-vertical-line-height/$golden;
       }
       @include background-image(linear-gradient(left, $color-hei 0, $color-paper 1px, $color-paper 2.5em));
       @include background-size(2.5em 100%);

@@ -44,12 +44,12 @@ textarea, select {
 
 input:not([type=checkbox]):not([type=radio]):not([type=range]),
 textarea {
-  padding: 0 (0.618em / 2);
+  padding: 0 (1em / $golden / 2);
 }
 
 // fix weird padding of select box
 select {
-  padding: 0 (0.618em / 4);
+  padding: 0 0 0 (1em / $golden / 4); // IE dropdown button's position will be affected by padding-right
 }
 
 input:not([type=checkbox]):not([type=radio]):not([type=range]),
@@ -65,6 +65,10 @@ textarea {
       line-height: $form-font-size;
     }
   }
+}
+
+select:focus:not([readonly]) {
+  background-color: $color-paper;
 }
 
 textarea {
@@ -86,7 +90,7 @@ label {
   color: $color-placeholder;
   @include transition(all .3s);
   position: absolute;
-  margin-left: 0.618 * $form-font-size / 2;
+  margin-left: $form-font-size / $golden / 2;
   line-height: $form-box-size;
   left: 0;
   .col *:not([type=checkbox]):not([type=radio]):not([type=range])+& {
@@ -105,7 +109,7 @@ label {
 
 .hiddenfortextarea {
   display: none;
-  //padding-top: (1em / 0.618); // TODO prevent jump?
+  //padding-top: (1em * $golden); // TODO prevent jump?
   white-space: pre-wrap;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
@@ -130,7 +134,7 @@ label {
     height: $form-box-size;
     display: inline-block;
     margin-left: $form-box-size;
-    padding-left: 0.618 * $form-font-size / 2;
+    padding-left: $form-font-size / $golden / 2;
     @include user-select(none);
 
     &:before {
@@ -148,9 +152,8 @@ label {
     border-color: transparent;
     +label {
       &:before {
-        width: $form-box-size - $border-width * 2 * 2;
-        height: $form-box-size - $border-width * 2 * 2;
-        border: $border-width * 2 $color-checkbox-checked solid;
+        border-color: $color-checkbox-checked;
+        @include box-shadow(0 0 0 1px $color-checkbox-checked);
       }
     }
   }
@@ -190,6 +193,11 @@ label {
       -webkit-transform: translateY(-$form-box-size / 2);
       transform: translateY(-$form-box-size / 2);
     }
+    /*&:focus, &:active { // TODO: number indicator in range input
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      background-color: $color-background;
+    }*/
     &:focus {
       outline: none;
     }

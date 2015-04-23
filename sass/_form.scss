@@ -36,11 +36,20 @@ textarea, select {
   }
   font-family: inherit;
   @include responsive-body-font-weight;
-  font-size: $large;
+  font-size: $form-font-size;
   background-color: transparent;
-  line-height: $xlarge;
-  padding: 0 0.618em;
+  line-height: $form-box-size;
   width: 100%;
+}
+
+input:not([type=checkbox]):not([type=radio]):not([type=range]),
+textarea {
+  padding: 0 (0.618em / 2);
+}
+
+// fix weird padding of select box
+select {
+  padding: 0 (0.618em / 4);
 }
 
 input:not([type=checkbox]):not([type=radio]):not([type=range]),
@@ -53,13 +62,13 @@ textarea {
     &+label {
       @include transform(translateY(-100%));
       font-size: $medium;
-      line-height: $large;
+      line-height: $form-font-size;
     }
   }
 }
 
 textarea {
-  min-height: 3 * $xlarge;
+  min-height: 3 * $form-box-size;
   // auto-resize textarea
   &.auto-resize {
     overflow-y: hidden;
@@ -71,18 +80,19 @@ label {
   .active & {
     @include transform(translateY(-100%));
     font-size: $medium;
-    line-height: $large;
+    line-height: $form-font-size;
   }
-  font-size: $large;
+  font-size: $form-font-size;
   color: $color-placeholder;
   @include transition(all .3s);
   position: absolute;
-  margin-left: 0.618 * $large;
-  line-height: $xlarge;
+  margin-left: 0.618 * $form-font-size / 2;
+  line-height: $form-box-size;
   left: 0;
   .col *:not([type=checkbox]):not([type=radio]):not([type=range])+& {
     left: $gutter-width-px / 2 + $border-width;
   }
+  // set vertical position
   *:not([type=checkbox]):not([type=radio]):not([type=range])+& {
     top: $border-width;
   }
@@ -90,7 +100,7 @@ label {
 
 .input-area {
   position: relative;
-  margin-top: $large;
+  margin-top: $form-font-size;
 }
 
 .hiddenfortextarea {
@@ -100,15 +110,15 @@ label {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  font-size: $large;
-  line-height: $xlarge;
+  font-size: $form-font-size;
+  line-height: $form-box-size;
 }
 
 // radio & checkbox
 [type=radio], [type=checkbox] {
   @include appearance(none);
-  width: $xlarge;
-  height: $xlarge;
+  width: $form-box-size;
+  height: $form-box-size;
   position: absolute;
   margin: 0;
   visibility: hidden;
@@ -116,19 +126,21 @@ label {
   &+label {
     cursor: pointer;
     position: relative;
-    line-height: $xlarge;
-    height: $xlarge;
+    line-height: $form-box-size;
+    height: $form-box-size;
     display: inline-block;
+    margin-left: $form-box-size;
+    padding-left: 0.618 * $form-font-size / 2;
     @include user-select(none);
 
     &:before {
       content: '';
       position: absolute;
       top: 0;
-      width: $xlarge - $border-width * 2;
-      height: $xlarge - $border-width * 2;
+      width: $form-box-size - $border-width * 2;
+      height: $form-box-size - $border-width * 2;
       border: $border-width solid $color-shade;
-      left: - 0.618 * $large;
+      left: -$form-box-size;
     }
   }
 
@@ -136,8 +148,8 @@ label {
     border-color: transparent;
     +label {
       &:before {
-        width: $xlarge - $border-width * 2 * 2;
-        height: $xlarge - $border-width * 2 * 2;
+        width: $form-box-size - $border-width * 2 * 2;
+        height: $form-box-size - $border-width * 2 * 2;
         border: $border-width * 2 $color-checkbox-checked solid;
       }
     }
@@ -162,21 +174,21 @@ label {
   // slider thumb
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: $large - $border-width * 2;
-    width: $large - $border-width * 2;
+    height: $form-font-size - $border-width * 2;
+    width: $form-font-size - $border-width * 2;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     border: $border-width $color-body-text solid;
     cursor: pointer;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    -webkit-transform: translateY(-($large - $border-width * 2) / 2);
-    transform: translateY(-($large - $border-width * 2) / 2);
+    -webkit-transform: translateY(-($form-font-size - $border-width * 2) / 2);
+    transform: translateY(-($form-font-size - $border-width * 2) / 2);
     &:hover, &:focus, &:active {
-      height: $xlarge; // this is different from -moz numbers! border-width is absurdly omitted here
-      width: $xlarge;
-      -webkit-transform: translateY(-$xlarge / 2);
-      transform: translateY(-$xlarge / 2);
+      height: $form-box-size; // this is different from -moz numbers! border-width is absurdly omitted here
+      width: $form-box-size;
+      -webkit-transform: translateY(-$form-box-size / 2);
+      transform: translateY(-$form-box-size / 2);
     }
     &:focus {
       outline: none;
@@ -184,8 +196,8 @@ label {
   }
 
   &::-moz-range-thumb {
-    height: $large - $border-width * 2;
-    width: $large - $border-width * 2;
+    height: $form-font-size - $border-width * 2;
+    width: $form-font-size - $border-width * 2;
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: $border-width $color-body-text solid;
@@ -194,8 +206,8 @@ label {
     -moz-transition: all 0.3s;
     transition: all 0.3s; // no transition animation in browser tests, why?
     &:hover, &:focus, &:active {
-      height: $xlarge - $border-width * 2; // this is different with -webkit numbers
-      width: $xlarge - $border-width * 2;
+      height: $form-box-size - $border-width * 2; // this is different with -webkit numbers
+      width: $form-box-size - $border-width * 2;
     }
     &:focus {
       outline: none;
@@ -203,8 +215,8 @@ label {
   }
 
   &::-ms-thumb { // hover effects for IE has been removed for jumpy bugs
-    height: $large - $border-width * 2;
-    width: $large - $border-width * 2;
+    height: $form-font-size - $border-width * 2;
+    width: $form-font-size - $border-width * 2;
     border-radius: 50%;
     border: $border-width $color-body-text solid;
     cursor: pointer;
@@ -233,7 +245,7 @@ label {
 
   &::-ms-track {
     width: 100%;
-    height: $xlarge;
+    height: $form-box-size;
     cursor: pointer;
     background: transparent;
     border: 0;

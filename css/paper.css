@@ -897,12 +897,16 @@ input:disabled:-ms-input-placeholder, input[readonly="readonly"]:-ms-input-place
 input:disabled::-webkit-input-placeholder, input[readonly="readonly"]::-webkit-input-placeholder, textarea:disabled::-webkit-input-placeholder, textarea[readonly="readonly"]::-webkit-input-placeholder, select:disabled::-webkit-input-placeholder, select[readonly="readonly"]::-webkit-input-placeholder { color: #758a99 !important; }
 input:disabled + label, input[readonly="readonly"] + label, textarea:disabled + label, textarea[readonly="readonly"] + label, select:disabled + label, select[readonly="readonly"] + label { color: #758a99; }
 
-input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea, select { font-family: inherit; font-weight: 300; font-size: 26px; background-color: transparent; line-height: 42px; padding: 0 0.618em; width: 100%; }
+input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea, select { font-family: inherit; font-weight: 300; font-size: 26px; background-color: transparent; line-height: 42px; width: 100%; }
 input:not([type=checkbox]):not([type=radio]):not([type=range]):-moz-placeholder, textarea:-moz-placeholder, select:-moz-placeholder { color: #424c50; }
 input:not([type=checkbox]):not([type=radio]):not([type=range])::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder { color: #424c50; }
 input:not([type=checkbox]):not([type=radio]):not([type=range]):-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder { color: #424c50; }
 input:not([type=checkbox]):not([type=radio]):not([type=range])::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder { color: #424c50; }
 @media only screen and (max-width: 767px) { input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea, select { font-weight: 400; } }
+
+input:not([type=checkbox]):not([type=radio]):not([type=range]), textarea { padding: 0 0.309em; }
+
+select { padding: 0 0.1545em; }
 
 input:not([type=checkbox]):not([type=radio]):not([type=range]):focus:not([readonly]), textarea:focus:not([readonly]) { border-color: transparent; background-color: #fffefa; -moz-box-shadow: 0 1px 0 0 #1c1e2a; -webkit-box-shadow: 0 1px 0 0 #1c1e2a; box-shadow: 0 1px 0 0 #1c1e2a; }
 input:not([type=checkbox]):not([type=radio]):not([type=range]):focus:not([readonly]) + label, textarea:focus:not([readonly]) + label { -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -webkit-transform: translateY(-100%); transform: translateY(-100%); font-size: 18px; line-height: 26px; }
@@ -910,7 +914,7 @@ input:not([type=checkbox]):not([type=radio]):not([type=range]):focus:not([readon
 textarea { min-height: 126px; }
 textarea.auto-resize { overflow-y: hidden; resize: none; }
 
-label { font-size: 26px; color: #424c50; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; position: absolute; margin-left: 16.068px; line-height: 42px; left: 0; }
+label { font-size: 26px; color: #424c50; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; position: absolute; margin-left: 8.034px; line-height: 42px; left: 0; }
 .active label { -moz-transform: translateY(-100%); -ms-transform: translateY(-100%); -webkit-transform: translateY(-100%); transform: translateY(-100%); font-size: 18px; line-height: 26px; }
 .col *:not([type=checkbox]):not([type=radio]):not([type=range]) + label { left: 11px; }
 *:not([type=checkbox]):not([type=radio]):not([type=range]) + label { top: 1px; }
@@ -920,8 +924,8 @@ label { font-size: 26px; color: #424c50; -moz-transition: all 0.3s; -o-transitio
 .hiddenfortextarea { display: none; white-space: pre-wrap; -ms-word-wrap: break-word; word-wrap: break-word; overflow-wrap: break-word; font-size: 26px; line-height: 42px; }
 
 [type=radio], [type=checkbox] { -moz-appearance: none; -webkit-appearance: none; width: 42px; height: 42px; position: absolute; margin: 0; visibility: hidden; }
-[type=radio] + label, [type=checkbox] + label { cursor: pointer; position: relative; line-height: 42px; height: 42px; display: inline-block; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
-[type=radio] + label:before, [type=checkbox] + label:before { content: ''; position: absolute; top: 0; width: 40px; height: 40px; border: 1px solid #424c50; left: -16.068px; }
+[type=radio] + label, [type=checkbox] + label { cursor: pointer; position: relative; line-height: 42px; height: 42px; display: inline-block; margin-left: 42px; padding-left: 8.034px; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
+[type=radio] + label:before, [type=checkbox] + label:before { content: ''; position: absolute; top: 0; width: 40px; height: 40px; border: 1px solid #424c50; left: -42px; }
 [type=radio]:checked, [type=checkbox]:checked { border-color: transparent; }
 [type=radio]:checked + label:before, [type=checkbox]:checked + label:before { width: 38px; height: 38px; border: 2px #9d2933 solid; }
 

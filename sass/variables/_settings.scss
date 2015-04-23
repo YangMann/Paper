@@ -25,12 +25,12 @@ $font-weight-body: $font-weight-normal !default;
 $rhythm-spacing: 0.168;
 $rhythm-line-height: 0.711;
 
+@import "modular-scale";
 // modular-scale settings
 $ms-ratio: $golden;
 $ms-base: 16px, 78px;
 
 // sizing
-@import "modular-scale";
 $xsmall: modular-scale(-2);
 $small: modular-scale(-1);
 $normal: modular-scale(0);
@@ -99,3 +99,5 @@ $document-vertical-line-height: 40px !default;
 
 // form & table
 $border-width: 1px;
+$form-font-size: $large;
+$form-box-size: ms(1, $form-font-size);

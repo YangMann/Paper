@@ -128,32 +128,36 @@ Try out `.document.vertical` and prepare to get surprised!
 ### Forms
 See demo page for examples.
 
-    <form>
-      <div class="row">
-        <div class="input-area col span-1-2">
-          <input placeholder="占位符">
-        </div>
-        <div class="input-area col span-1-2">
-          <input id="input_name" type="text">
-          <label for="input_name">姓名</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-area col span-1-2">
-          <input id="input_addr" placeholder="占位符">
-          <label for="input_addr">地址</label>
-        </div>
-        <div class="input-area col span-1-2">
-          <input id="input_disabled" placeholder="输入被禁用" disabled>
-          <label for="input_disabled">禁用</label>
-        </div>
-      </div>
-    </form>
+```html
+<form>
+  <div class="row">
+    <div class="input-area col span-1-2">
+      <input placeholder="占位符">
+    </div>
+    <div class="input-area col span-1-2">
+      <input id="input_name" type="text">
+      <label for="input_name">姓名</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-area col span-1-2">
+      <input id="input_addr" placeholder="占位符">
+      <label for="input_addr">地址</label>
+    </div>
+    <div class="input-area col span-1-2">
+      <input id="input_disabled" placeholder="输入被禁用" disabled>
+      <label for="input_disabled">禁用</label>
+    </div>
+  </div>
+</form>
+```
 
 #### Textarea
 Textareas can resize themselves! 
 
-    <div class="input-area">
-      <textarea id="input_textarea" class="auto-resize"></textarea>
-      <label for="input_textarea">输入文本框</label>
-    </div>
+```html
+<div class="input-area">
+  <textarea id="input_textarea" class="auto-resize"></textarea>
+  <label for="input_textarea">输入文本框</label>
+</div>
+```

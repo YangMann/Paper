@@ -22,6 +22,7 @@ Paper, a modern CSS framework with a vintage breeze of China.
 - [x] Select boxes
 - [x] Textarea
 - [ ] Search boxes
+- [x] Radio & checkbox
 - [x] Range input
 - [ ] Switch
 - [ ] Character Counter

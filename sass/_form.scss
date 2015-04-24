@@ -17,15 +17,15 @@ input, textarea, select {
 
   // disabled
   &:disabled, &[readonly="readonly"] {
-    color: $color-disabled-input;
-    border-color: $color-disabled-input;
+    color: $color-input-disabled;
+    border-color: $color-input-disabled;
     @include input-placeholder {
-      color: $color-disabled-input !important; // TODO: Remove this !important
+      color: $color-input-disabled !important; // TODO: Remove this !important
     }
   }
   // disabled label style
   &:disabled+label, &[readonly="readonly"]+label {
-    color: $color-disabled-input;
+    color: $color-input-disabled;
   }
 }
 
@@ -195,11 +195,11 @@ label {
       -webkit-transform: translateY(-$form-box-size / 2);
       transform: translateY(-$form-box-size / 2);
     }
-    /*&:focus, &:active { // TODO: number indicator in range input
-      -webkit-border-radius: 0;
-      border-radius: 0;
-      background-color: $color-background;
-    }*/
+    //&:focus, &:active { // TODO: number indicator in range input
+    //  -webkit-border-radius: 0;
+    //  border-radius: 0;
+    //  background-color: $color-background;
+    //}
     &:focus {
       outline: none;
     }

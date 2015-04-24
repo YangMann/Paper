@@ -66,11 +66,12 @@ $color-mohui: #758a99 !default; // 墨灰 ink & gray
 $color-yanzhi: #9d2933 !default; // 胭脂 coccineous
 $color-yingtao: #c93756 !default; // 樱桃 cherry
 $color-dahong: #ff2121 !default; // 大红 bright red
+$color-taohong: #f47983 !default; // 桃红 peach blossom
 $color-ouse: #edd1d8 !default; // 藕色 color of lotus root
 $color-jingbai: #ffffff !default; // 精白 pure white
 $color-zhi: #fffefa !default; // 纸 paper white
 $color-qianbai: #f0f0f4 !default; // 铅白 lead white
-$color-yaluanqing: #e0eee8; // 鸭卵青 color of egg white
+$color-yaluanqing: #e0eee8; // 鸭卵青 color of duck egg shell
 $color-su: #e0f0e9 !default; // 素 no color
 $color-qingbai: #c0ebd7 !default; // 青白 white with a dark blue glow
 $color-chijin: #f2be45 !default; // 赤金 pure gold
@@ -94,7 +95,7 @@ $color-shade: $color-yaqing;
 $color-placeholder: $color-yaqing;
 $color-quote-text: $color-mose;
 $color-quotation-mark: $color-mohui;
-$color-disabled-input: $color-mohui;
+$color-input-disabled: $color-mohui;
 $color-body-link: $color-yanzhi;
 $color-heading-link: $color-yanzhi;
 $color-checkbox-checked: $color-yanzhi;
@@ -109,6 +110,9 @@ $color-marker-underline: $color-jianghuang;
 $color-marker: $color-yahuang;
 $color-button: $color-dailv;
 $color-button-text: $color-jingbai;
+$color-success: $color-zhuqing;
+$color-warning: $color-taohong;
+$color-button-disabled: $color-yaluanqing;
 
 // document
 $document-padding: 10% !default;
@@ -120,3 +124,4 @@ $form-font-size: $large;
 $form-box-size: ms(1, $form-font-size);
 $button-font-size: $large;
 $button-box-size: ms(1, $button-font-size);
+$button-thickness: 10px;

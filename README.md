@@ -28,8 +28,9 @@ Paper, a modern CSS framework with a vintage breeze of China.
 - [ ] Character Counter
 
 ### Buttons
-- [ ] Basic button style
+- [x] Basic button style
 - [ ] Button animation
+- [ ] Progress bar in button
 
 ### Icons
 - [ ] Icon set

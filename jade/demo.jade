@@ -7,6 +7,9 @@ include _base
             form.row .row {
                 margin-bottom: 1em;
             }
+            button {
+                margin: 16px 0;
+            }
     block content
         .container
             #heading
@@ -182,7 +185,36 @@ include _base
                                 input(type="range", id="input_range", min=0, max=100)
                     .row
                         .col.span-1-6
-                            button(type="button") 按钮
+                            button(type="button") 普通按钮
+                            button.r(type="button") 普通按钮
+                            button.u(type="button") 普通按钮
+                            button.f(type="button") 普通按钮
+                        .col.span-1-6
+                            button.success(type="button") 成功按钮
+                            button.success.r(type="button") 成功按钮
+                            button.success.u(type="button") 成功按钮
+                            button.success.f(type="button") 成功按钮
+                        .col.span-1-6
+                            button.warning(type="button") 警告按钮
+                            button.warning.r(type="button") 警告按钮
+                            button.warning.u(type="button") 警告按钮
+                            button.warning.f(type="button") 警告按钮
+                        .col.span-1-6
+                            button(type="button", disabled="true") 禁用按钮
+                            button.r(type="button", disabled="true") 禁用按钮
+                            button.u(type="button", disabled="true") 禁用按钮
+                            button.f(type="button", disabled="true") 禁用按钮
+                        .col.span-1-6
+                            button.square(type="button") 按
+                            button.square.r(type="button") 按
+                            button.square.u(type="button") 按
+                            button.square.f(type="button") 按
+                        .col.span-1-6
+                            button.round(type="button") 按
+                            button.round.r(type="button") 按
+                            button.round.u(type="button") 按
+                            button.round.f(type="button") 按
+
         script(src="js/vendor/jquery-2.1.3.min.js")
         script(src="js/typography.js")
         script(src="js/form.js")

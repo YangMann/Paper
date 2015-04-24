@@ -16,6 +16,9 @@
       form.row .row {
           margin-bottom: 1em;
       }
+      button {
+          margin: 16px 0;
+      }
     </style>
     <div class="container">
       <div id="heading">
@@ -263,7 +266,40 @@
           </div>
           <div class="row">
             <div class="col span-1-6">
-              <button type="button">按钮</button>
+              <button type="button">普通按钮</button>
+              <button type="button" class="r">普通按钮</button>
+              <button type="button" class="u">普通按钮</button>
+              <button type="button" class="f">普通按钮</button>
+            </div>
+            <div class="col span-1-6">
+              <button type="button" class="success">成功按钮</button>
+              <button type="button" class="success r">成功按钮</button>
+              <button type="button" class="success u">成功按钮</button>
+              <button type="button" class="success f">成功按钮</button>
+            </div>
+            <div class="col span-1-6">
+              <button type="button" class="warning">警告按钮</button>
+              <button type="button" class="warning r">警告按钮</button>
+              <button type="button" class="warning u">警告按钮</button>
+              <button type="button" class="warning f">警告按钮</button>
+            </div>
+            <div class="col span-1-6">
+              <button type="button" disabled="true">禁用按钮</button>
+              <button type="button" disabled="true" class="r">禁用按钮</button>
+              <button type="button" disabled="true" class="u">禁用按钮</button>
+              <button type="button" disabled="true" class="f">禁用按钮</button>
+            </div>
+            <div class="col span-1-6">
+              <button type="button" class="square">按</button>
+              <button type="button" class="square r">按</button>
+              <button type="button" class="square u">按</button>
+              <button type="button" class="square f">按</button>
+            </div>
+            <div class="col span-1-6">
+              <button type="button" class="round">按</button>
+              <button type="button" class="round r">按</button>
+              <button type="button" class="round u">按</button>
+              <button type="button" class="round f">按</button>
             </div>
           </div>
         </form>

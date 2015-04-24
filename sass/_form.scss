@@ -129,6 +129,7 @@ label {
 
   &+label {
     cursor: pointer;
+    color: $color-body-text;
     position: relative;
     line-height: $form-box-size;
     height: $form-box-size;

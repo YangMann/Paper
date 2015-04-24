@@ -9,7 +9,7 @@
 @import "compass/css3/background-size";
 
 // document styles
-.document {
+.doc {
   position: relative;
   overflow: hidden;
   @include rhythm-margins($rhythm-line-height);
@@ -17,15 +17,15 @@
   padding: $document-padding/$golden $document-padding;
   @include z-depth-1;
 
-  .document-title {
+  .doc-title {
     text-align: center;
     @include margin-trailer($rhythm-line-height);
   }
 
-  &.document-red-head {
+  &.doc-red-head {
     background-color: $color-background;
 
-    .document-title {
+    .doc-title {
       @include padding-trailer($rhythm-line-height);
       @include margin-trailer($rhythm-line-height + $rhythm-spacing);
       border-bottom: 2px $color-heading-red-head solid;
@@ -37,16 +37,16 @@
     }
   }
 
-  &.document-image {
+  &.doc-image {
     padding: 0;
-    .document-title {
+    .doc-title {
       margin-bottom: 0;
       position: relative;
       img {
         display: block;
         width: 100%;
       }
-      .document-title-text {
+      .doc-title-text {
         position: absolute;
         left: 10%;
         bottom: 10% / $golden;
@@ -60,20 +60,20 @@
         }
       }
     }
-    .document-content {
+    .doc-content {
       padding: 0 $document-padding $document-padding/$golden $document-padding;
       @include padding-leader($rhythm-line-height);
     }
   }
 
-  &.document-newspaper {
+  &.doc-newspaper {
     background-color: $color-newspaper;
-    .document-title {
+    .doc-title {
       h1, h2, h3, h4, h5, h6 {
         font-weight: $font-weight-heavy;
       }
     }
-    .document-content {
+    .doc-content {
       @include column-count(2);
       @include screen(phone-vertical) {
         @include column-count(1);
@@ -91,11 +91,11 @@
     &, h1, h2, h3, h4, h5, h6 {
       font-family: $font-family-fangsong;
     }
-    .document-title {
+    .doc-title {
       text-align: left; // IE hack
       text-align: start;
     }
-    .document-content {
+    .doc-content {
       position: relative;
       padding: 0.5em 0;
       p {

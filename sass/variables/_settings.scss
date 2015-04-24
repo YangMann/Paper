@@ -66,12 +66,27 @@ $color-mohui: #758a99 !default; // 墨灰 ink & gray
 $color-yanzhi: #9d2933 !default; // 胭脂 coccineous
 $color-yingtao: #c93756 !default; // 樱桃 cherry
 $color-dahong: #ff2121 !default; // 大红 bright red
+$color-ouse: #edd1d8 !default; // 藕色 color of lotus root
 $color-jingbai: #ffffff !default; // 精白 pure white
 $color-zhi: #fffefa !default; // 纸 paper white
 $color-qianbai: #f0f0f4 !default; // 铅白 lead white
+$color-yaluanqing: #e0eee8; // 鸭卵青 color of egg white
 $color-su: #e0f0e9 !default; // 素 no color
+$color-qingbai: #c0ebd7 !default; // 青白 white with a dark blue glow
+$color-chijin: #f2be45 !default; // 赤金 pure gold
 $color-jianghuang: #ffc773 !default; // 姜黄 ginger yellow
+$color-jinse: #eacd76 !default; // 金色 gold
 $color-yahuang: #faff72 !default; // 鸭黄 color of duckling's feather
+$color-songhua: #bce672 !default; // 松花色 color of pine tree pollen
+$color-zhuqing: #789262 !default; // 竹青 color of bamboo
+$color-dailv: #426666 !default; // 黛绿 dark green
+$color-yuse: #7bcfa6 !default; // 玉色 color of jade
+$color-piao: #7fecad !default; // 缥 color of light-blue silk
+$color-bilan: #3eede7 !default; // 碧蓝 blue with a dark green glow
+$color-zangqing: #2e4e7e !default; // 藏青 nearly-black blue
+$color-zanglan: #3b2e7e !default; // 藏蓝 blue with a red glow
+$color-dai: #4a4266 !default; // 黛 the color ancient Chinese woman use to draw their eyebrows
+$color-zise: #8d4bbb !default; // 紫色 purple, ancient symbol of prosperousness
 
 $color-heading-text: $color-qihei;
 $color-body-text: $color-shenhei;
@@ -92,12 +107,16 @@ $color-newspaper: $color-qianbai;
 $color-text-selection: $color-su;
 $color-marker-underline: $color-jianghuang;
 $color-marker: $color-yahuang;
+$color-button: $color-dailv;
+$color-button-text: $color-jingbai;
 
 // document
 $document-padding: 10% !default;
 $document-vertical-line-height: 40px !default;
 
-// form & table
+// form, table, button
 $border-width: 1px;
 $form-font-size: $large;
 $form-box-size: ms(1, $form-font-size);
+$button-font-size: $large;
+$button-box-size: ms(1, $button-font-size);

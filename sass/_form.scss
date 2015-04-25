@@ -61,7 +61,7 @@ textarea {
     @include box-shadow(0 1px 0 0 $color-body-text);
     &+label {
       @include transform(translateY(-100%));
-      font-size: $medium;
+      font-size: ms(-1, $form-font-size);
       line-height: $form-font-size;
     }
   }
@@ -83,7 +83,7 @@ textarea {
 label {
   .active & {
     @include transform(translateY(-100%));
-    font-size: $medium;
+    font-size: ms(-1, $form-font-size);
     line-height: $form-font-size;
   }
   font-size: $form-font-size;

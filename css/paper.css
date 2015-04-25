@@ -1015,6 +1015,6 @@ table.col-border tr > td:not(:last-child), table.col-border tr > th:not(:last-ch
 table.row-border thead { border-bottom: 3px double #424c50; }
 table.row-border tbody > tr:not(:last-child) { border-bottom: 1px solid #424c50; }
 
-td, th { font-weight: inherit; line-height: 29px; padding: 0 0.30902em; }
+td, th { font-weight: inherit; line-height: 29px; padding: 0 0.30902em; display: table-cell; }
 
 td { text-align: inherit; }

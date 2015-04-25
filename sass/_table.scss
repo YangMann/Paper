@@ -64,6 +64,7 @@ td, th {
   font-weight: inherit;
   line-height: $form-box-size;
   padding: 0 (1em / $golden / 2);
+  display: table-cell;
 }
 
 td {

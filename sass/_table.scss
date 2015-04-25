@@ -1,7 +1,51 @@
 @charset "UTF-8";
+@import "variables/settings";
+@import "mixins/responsive-font-weight";
+@import "compass/css3/transition";
 
 // table styles
 table {
   width: 100%;
   display: table;
+  font-size: $form-font-size;
+  border: $border-width solid $color-shade;
+  outline: none;
+
+  thead {
+    font-weight: $font-weight-thead;
+    border-bottom: $border-width solid $color-shade;
+  }
+
+  &.text-center > thead th {
+    text-align: center;
+  }
+
+  &.text-right > thead th {
+    text-align: right;
+  }
+
+  tbody {
+    @include responsive-body-font-weight;
+  }
+
+  &.hover > tbody > tr {
+    @include transition(background-color .1s);
+    &:hover {
+      background-color: $color-form-strip;
+    }
+  }
+
+  &.striped > tbody > tr:nth-child(odd) {
+    background-color: $color-form-strip;
+  }
+}
+
+td, th {
+  font-weight: inherit;
+  line-height: $form-box-size;
+  padding: 0 (1em / $golden / 2);
+}
+
+td {
+  text-align: inherit;
 }

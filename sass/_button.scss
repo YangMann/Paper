@@ -43,7 +43,7 @@ button, .btn {
     height: 100%;
     @include border-radius(inherit);
     z-index: -1;
-    @include box-shadow(inset 0 0 0 $button-box-size/2 $color-button);
+    @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-button);
     @include transition(transform 0.1s);
     @include transform-style(preserve-3d);
   }
@@ -81,7 +81,7 @@ button, .btn {
     &:hover, &:active {
       color: $color-button-text;
       &::before {
-        @include box-shadow(inset 0 0 0 $button-box-size/2 $color-button);
+        @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-button);
       }
       &::after {
         @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-button, 20), 0 -1px 0 $color-button);
@@ -100,7 +100,7 @@ button, .btn {
     &:hover, &:active {
       color: $color-button-text;
       &::before {
-        @include box-shadow(inset 0 0 0 $button-box-size/2 $color-button);
+        @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-button);
       }
       &::after {
         @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-button, 20), 0 -1px 0 $color-button);
@@ -111,7 +111,7 @@ button, .btn {
   // success button styles
   &.success {
     &::before, &::after {
-      @include box-shadow(inset 0 0 0 $button-box-size/2 $color-success);
+      @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-success);
     }
     &:hover, &:active {
       color: $color-success;
@@ -128,7 +128,7 @@ button, .btn {
       &:hover, &:active {
         color: $color-button-text;
         &::before {
-          @include box-shadow(inset 0 0 0 $button-box-size/2 $color-success);
+          @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-success);
         }
         &::after {
           @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-success, 20), 0 -1px 0 $color-success);
@@ -147,7 +147,7 @@ button, .btn {
       &:hover, &:active {
         color: $color-button-text;
         &::before {
-          @include box-shadow(inset 0 0 0 $button-box-size/2 $color-success);
+          @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-success);
         }
         &::after {
           @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-success, 20), 0 -1px 0 $color-success);
@@ -159,7 +159,7 @@ button, .btn {
   // warning button styles
   &.warning {
     &::before, &::after {
-      @include box-shadow(inset 0 0 0 $button-box-size/2 $color-warning);
+      @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-warning);
     }
     &:hover, &:active {
       color: $color-warning;
@@ -176,7 +176,7 @@ button, .btn {
       &:hover, &:active {
         color: $color-button-text;
         &::before {
-          @include box-shadow(inset 0 0 0 $button-box-size/2 $color-warning);
+          @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-warning);
         }
         &::after {
           @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-warning, 20), 0 -1px 0 $color-warning);
@@ -195,7 +195,7 @@ button, .btn {
       &:hover, &:active {
         color: $color-button-text;
         &::before {
-          @include box-shadow(inset 0 0 0 $button-box-size/2 $color-warning);
+          @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-warning);
         }
         &::after {
           @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-warning, 20), 0 -1px 0 $color-warning);
@@ -225,7 +225,7 @@ button, .btn {
     &, &.f {
       cursor: default;
       &::before, &::after {
-        @include box-shadow(inset 0 0 0 $button-box-size/2 $color-button-disabled);
+        @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-button-disabled);
       }
       &:hover {
         color: $color-button-text;

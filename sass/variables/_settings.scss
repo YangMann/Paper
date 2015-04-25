@@ -20,6 +20,7 @@ $font-weight-extra-light: 100;
 
 $font-weight-heading: $font-weight-light;
 $font-weight-body: $font-weight-normal !default;
+$font-weight-thead: $font-weight-medium;
 
 // vertical rhythm
 $rhythm-spacing: 0.168;
@@ -73,6 +74,7 @@ $color-zhi: #fffefa !default; // 纸 paper white
 $color-qianbai: #f0f0f4 !default; // 铅白 lead white
 $color-yaluanqing: #e0eee8; // 鸭卵青 color of duck egg shell
 $color-su: #e0f0e9 !default; // 素 no color
+$color-cangbai: #d1d9e0 !default; // 苍白 pale white
 $color-qingbai: #c0ebd7 !default; // 青白 white with a dark blue glow
 $color-chijin: #f2be45 !default; // 赤金 pure gold
 $color-jianghuang: #ffc773 !default; // 姜黄 ginger yellow
@@ -113,6 +115,7 @@ $color-button-text: $color-jingbai;
 $color-success: $color-zhuqing;
 $color-warning: $color-taohong;
 $color-button-disabled: $color-yaluanqing;
+$color-form-strip: $color-qianbai;
 
 // document
 $document-padding: 10% !default;

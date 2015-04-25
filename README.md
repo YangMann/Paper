@@ -41,7 +41,7 @@ Paper, a modern CSS framework with a vintage breeze of China.
 - [ ] Preloader
 
 ### Table
-- [ ] Basic table style
+- [x] Basic table style
 
 ### Navigation
 - [ ] Basic nav style

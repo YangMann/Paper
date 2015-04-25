@@ -2,13 +2,14 @@
 @import "variables/settings";
 @import "mixins/responsive-font-weight";
 @import "compass/css3/transition";
+@import "compass/css3/box-shadow";
 
 // table styles
 table {
   width: 100%;
   display: table;
   font-size: $form-font-size;
-  border: $border-width solid $color-shade;
+  border: none;
   outline: none;
 
   thead {
@@ -39,8 +40,8 @@ table {
     background-color: $color-form-strip;
   }
 
-  &.no-border {
-    border: none;
+  &.outer-border {
+    border: $border-width solid $color-shade;
   }
 
   &.col-border {
@@ -50,6 +51,9 @@ table {
   }
 
   &.row-border {
+    thead {
+      border-bottom: $border-width*3 double $color-shade; // 3x border-width to make enough room for double line
+    }
     tbody > tr:not(:last-child) {
       border-bottom: $border-width solid $color-shade;
     }

@@ -1010,6 +1010,9 @@ table tbody { font-weight: 300; }
 table.hover > tbody > tr { -moz-transition: background-color 0.1s; -o-transition: background-color 0.1s; -webkit-transition: background-color 0.1s; transition: background-color 0.1s; }
 table.hover > tbody > tr:hover { background-color: #f0f0f4; }
 table.striped > tbody > tr:nth-child(odd) { background-color: #f0f0f4; }
+table.no-border { border: none; }
+table.col-border tr > td:not(:last-child), table.col-border tr > th:not(:last-child) { border-right: 1px solid #424c50; }
+table.row-border tbody > tr:not(:last-child) { border-bottom: 1px solid #424c50; }
 
 td, th { font-weight: inherit; line-height: 29px; padding: 0 0.30902em; }
 

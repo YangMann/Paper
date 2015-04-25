@@ -38,6 +38,22 @@ table {
   &.striped > tbody > tr:nth-child(odd) {
     background-color: $color-form-strip;
   }
+
+  &.no-border {
+    border: none;
+  }
+
+  &.col-border {
+    tr > td:not(:last-child), tr > th:not(:last-child) {
+      border-right: $border-width solid $color-shade;
+    }
+  }
+
+  &.row-border {
+    tbody > tr:not(:last-child) {
+      border-bottom: $border-width solid $color-shade;
+    }
+  }
 }
 
 td, th {

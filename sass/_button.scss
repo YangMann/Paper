@@ -6,6 +6,9 @@
 @import "compass/css3/transition";
 @import "compass/css3/transform";
 
+$button-shade: 16;
+$button-angle: 30deg;
+
 // button styles
 button, .btn {
   // only displays text
@@ -70,7 +73,7 @@ button, .btn {
   }
 
   &:active {
-    @include transform(rotateX(30deg));
+    @include transform(rotateX($button-angle));
   }
 
   &.r {
@@ -84,7 +87,7 @@ button, .btn {
         @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-button);
       }
       &::after {
-        @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-button, 20), 0 -1px 0 $color-button);
+        @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-button, $button-shade), 0 -1px 0 $color-button);
       }
     }
   }
@@ -103,7 +106,20 @@ button, .btn {
         @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-button);
       }
       &::after {
-        @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-button, 20), 0 -1px 0 $color-button);
+        @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-button, $button-shade), 0 -1px 0 $color-button);
+      }
+    }
+  }
+
+  &.n {
+    color: $color-button;
+    &::before {
+      @include box-shadow(none);
+    }
+
+    &:hover, &:active {
+      &::before {
+        @include box-shadow(inset 0 0 0 $border-width $color-button);
       }
     }
   }
@@ -131,7 +147,7 @@ button, .btn {
           @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-success);
         }
         &::after {
-          @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-success, 20), 0 -1px 0 $color-success);
+          @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-success, $button-shade), 0 -1px 0 $color-success);
         }
       }
     }
@@ -150,7 +166,20 @@ button, .btn {
           @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-success);
         }
         &::after {
-          @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-success, 20), 0 -1px 0 $color-success);
+          @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-success, $button-shade), 0 -1px 0 $color-success);
+        }
+      }
+    }
+
+    &.n {
+      color: $color-success;
+      &::before {
+        @include box-shadow(none);
+      }
+
+      &:hover, &:active {
+        &::before {
+          @include box-shadow(inset 0 0 0 $border-width $color-success);
         }
       }
     }
@@ -179,7 +208,7 @@ button, .btn {
           @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-warning);
         }
         &::after {
-          @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-warning, 20), 0 -1px 0 $color-warning);
+          @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-warning, $button-shade), 0 -1px 0 $color-warning);
         }
       }
     }
@@ -198,7 +227,20 @@ button, .btn {
           @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-warning);
         }
         &::after {
-          @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-warning, 20), 0 -1px 0 $color-warning);
+          @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-warning, $button-shade), 0 -1px 0 $color-warning);
+        }
+      }
+    }
+
+    &.n {
+      color: $color-warning;
+      &::before {
+        @include box-shadow(none);
+      }
+
+      &:hover, &:active {
+        &::before {
+          @include box-shadow(inset 0 0 0 $border-width $color-warning);
         }
       }
     }
@@ -214,7 +256,7 @@ button, .btn {
     @include border-radius(50%);
     &::after {
       top: 50%;
-      height: $button-box-size + 4px; // TODO: calculate this
+      height: $button-box-size * (1 + 0.5 * (1 - sin($button-angle)));
       @include border-bottom-left-radius(50%);
       @include border-bottom-right-radius(50%);
       z-index: -2;
@@ -236,6 +278,16 @@ button, .btn {
       color: $color-button-disabled;
       &::before, &::after {
         @include box-shadow(inset 0 0 0 $border-width $color-button-disabled);
+      }
+      &:hover {
+        color: $color-button-disabled;
+      }
+    }
+
+    &.n {
+      color: $color-button-disabled;
+      &::before, &::after {
+        @include box-shadow(none);
       }
       &:hover {
         color: $color-button-disabled;

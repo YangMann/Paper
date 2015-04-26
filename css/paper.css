@@ -959,12 +959,15 @@ button.r, .btn.r { color: #426666; }
 button.r::before, button.r::after, .btn.r::before, .btn.r::after { -moz-box-shadow: inset 0 0 0 1px #426666; -webkit-box-shadow: inset 0 0 0 1px #426666; box-shadow: inset 0 0 0 1px #426666; }
 button.r:hover, button.r:active, .btn.r:hover, .btn.r:active { color: #ffffff; }
 button.r:hover::before, button.r:active::before, .btn.r:hover::before, .btn.r:active::before { -moz-box-shadow: inset 0 0 0 15px #426666; -webkit-box-shadow: inset 0 0 0 15px #426666; box-shadow: inset 0 0 0 15px #426666; }
-button.r:hover::after, button.r:active::after, .btn.r:hover::after, .btn.r:active::after { -moz-box-shadow: inset 0 0 0 14.5px #345151, 0 -1px 0 #426666; -webkit-box-shadow: inset 0 0 0 14.5px #345151, 0 -1px 0 #426666; box-shadow: inset 0 0 0 14.5px #345151, 0 -1px 0 #426666; }
+button.r:hover::after, button.r:active::after, .btn.r:hover::after, .btn.r:active::after { -moz-box-shadow: inset 0 0 0 14.5px #375555, 0 -1px 0 #426666; -webkit-box-shadow: inset 0 0 0 14.5px #375555, 0 -1px 0 #426666; box-shadow: inset 0 0 0 14.5px #375555, 0 -1px 0 #426666; }
 button.u, .btn.u { color: #426666; }
 button.u::before, button.u::after, .btn.u::before, .btn.u::after { -moz-box-shadow: inset 0 0 0 1px #426666; -webkit-box-shadow: inset 0 0 0 1px #426666; box-shadow: inset 0 0 0 1px #426666; }
 button.f:hover, button.f:active, .btn.f:hover, .btn.f:active { color: #ffffff; }
 button.f:hover::before, button.f:active::before, .btn.f:hover::before, .btn.f:active::before { -moz-box-shadow: inset 0 0 0 15px #426666; -webkit-box-shadow: inset 0 0 0 15px #426666; box-shadow: inset 0 0 0 15px #426666; }
-button.f:hover::after, button.f:active::after, .btn.f:hover::after, .btn.f:active::after { -moz-box-shadow: inset 0 0 0 14.5px #345151, 0 -1px 0 #426666; -webkit-box-shadow: inset 0 0 0 14.5px #345151, 0 -1px 0 #426666; box-shadow: inset 0 0 0 14.5px #345151, 0 -1px 0 #426666; }
+button.f:hover::after, button.f:active::after, .btn.f:hover::after, .btn.f:active::after { -moz-box-shadow: inset 0 0 0 14.5px #375555, 0 -1px 0 #426666; -webkit-box-shadow: inset 0 0 0 14.5px #375555, 0 -1px 0 #426666; box-shadow: inset 0 0 0 14.5px #375555, 0 -1px 0 #426666; }
+button.n, .btn.n { color: #426666; }
+button.n::before, .btn.n::before { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+button.n:hover::before, button.n:active::before, .btn.n:hover::before, .btn.n:active::before { -moz-box-shadow: inset 0 0 0 1px #426666; -webkit-box-shadow: inset 0 0 0 1px #426666; box-shadow: inset 0 0 0 1px #426666; }
 button.success::before, button.success::after, .btn.success::before, .btn.success::after { -moz-box-shadow: inset 0 0 0 15px #789262; -webkit-box-shadow: inset 0 0 0 15px #789262; box-shadow: inset 0 0 0 15px #789262; }
 button.success:hover, button.success:active, .btn.success:hover, .btn.success:active { color: #789262; }
 button.success:hover::before, button.success:hover::after, button.success:active::before, button.success:active::after, .btn.success:hover::before, .btn.success:hover::after, .btn.success:active::before, .btn.success:active::after { -moz-box-shadow: inset 0 0 0 1px; -webkit-box-shadow: inset 0 0 0 1px; box-shadow: inset 0 0 0 1px; }
@@ -972,12 +975,15 @@ button.success.r, .btn.success.r { color: #789262; }
 button.success.r::before, button.success.r::after, .btn.success.r::before, .btn.success.r::after { -moz-box-shadow: inset 0 0 0 1px #789262; -webkit-box-shadow: inset 0 0 0 1px #789262; box-shadow: inset 0 0 0 1px #789262; }
 button.success.r:hover, button.success.r:active, .btn.success.r:hover, .btn.success.r:active { color: #ffffff; }
 button.success.r:hover::before, button.success.r:active::before, .btn.success.r:hover::before, .btn.success.r:active::before { -moz-box-shadow: inset 0 0 0 15px #789262; -webkit-box-shadow: inset 0 0 0 15px #789262; box-shadow: inset 0 0 0 15px #789262; }
-button.success.r:hover::after, button.success.r:active::after, .btn.success.r:hover::after, .btn.success.r:active::after { -moz-box-shadow: inset 0 0 0 14.5px #60744e, 0 -1px 0 #789262; -webkit-box-shadow: inset 0 0 0 14.5px #60744e, 0 -1px 0 #789262; box-shadow: inset 0 0 0 14.5px #60744e, 0 -1px 0 #789262; }
+button.success.r:hover::after, button.success.r:active::after, .btn.success.r:hover::after, .btn.success.r:active::after { -moz-box-shadow: inset 0 0 0 14.5px #647a52, 0 -1px 0 #789262; -webkit-box-shadow: inset 0 0 0 14.5px #647a52, 0 -1px 0 #789262; box-shadow: inset 0 0 0 14.5px #647a52, 0 -1px 0 #789262; }
 button.success.u, .btn.success.u { color: #789262; }
 button.success.u::before, button.success.u::after, .btn.success.u::before, .btn.success.u::after { -moz-box-shadow: inset 0 0 0 1px #789262; -webkit-box-shadow: inset 0 0 0 1px #789262; box-shadow: inset 0 0 0 1px #789262; }
 button.success.f:hover, button.success.f:active, .btn.success.f:hover, .btn.success.f:active { color: #ffffff; }
 button.success.f:hover::before, button.success.f:active::before, .btn.success.f:hover::before, .btn.success.f:active::before { -moz-box-shadow: inset 0 0 0 15px #789262; -webkit-box-shadow: inset 0 0 0 15px #789262; box-shadow: inset 0 0 0 15px #789262; }
-button.success.f:hover::after, button.success.f:active::after, .btn.success.f:hover::after, .btn.success.f:active::after { -moz-box-shadow: inset 0 0 0 14.5px #60744e, 0 -1px 0 #789262; -webkit-box-shadow: inset 0 0 0 14.5px #60744e, 0 -1px 0 #789262; box-shadow: inset 0 0 0 14.5px #60744e, 0 -1px 0 #789262; }
+button.success.f:hover::after, button.success.f:active::after, .btn.success.f:hover::after, .btn.success.f:active::after { -moz-box-shadow: inset 0 0 0 14.5px #647a52, 0 -1px 0 #789262; -webkit-box-shadow: inset 0 0 0 14.5px #647a52, 0 -1px 0 #789262; box-shadow: inset 0 0 0 14.5px #647a52, 0 -1px 0 #789262; }
+button.success.n, .btn.success.n { color: #789262; }
+button.success.n::before, .btn.success.n::before { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+button.success.n:hover::before, button.success.n:active::before, .btn.success.n:hover::before, .btn.success.n:active::before { -moz-box-shadow: inset 0 0 0 1px #789262; -webkit-box-shadow: inset 0 0 0 1px #789262; box-shadow: inset 0 0 0 1px #789262; }
 button.warning::before, button.warning::after, .btn.warning::before, .btn.warning::after { -moz-box-shadow: inset 0 0 0 15px #f47983; -webkit-box-shadow: inset 0 0 0 15px #f47983; box-shadow: inset 0 0 0 15px #f47983; }
 button.warning:hover, button.warning:active, .btn.warning:hover, .btn.warning:active { color: #f47983; }
 button.warning:hover::before, button.warning:hover::after, button.warning:active::before, button.warning:active::after, .btn.warning:hover::before, .btn.warning:hover::after, .btn.warning:active::before, .btn.warning:active::after { -moz-box-shadow: inset 0 0 0 1px; -webkit-box-shadow: inset 0 0 0 1px; box-shadow: inset 0 0 0 1px; }
@@ -985,21 +991,27 @@ button.warning.r, .btn.warning.r { color: #f47983; }
 button.warning.r::before, button.warning.r::after, .btn.warning.r::before, .btn.warning.r::after { -moz-box-shadow: inset 0 0 0 1px #f47983; -webkit-box-shadow: inset 0 0 0 1px #f47983; box-shadow: inset 0 0 0 1px #f47983; }
 button.warning.r:hover, button.warning.r:active, .btn.warning.r:hover, .btn.warning.r:active { color: #ffffff; }
 button.warning.r:hover::before, button.warning.r:active::before, .btn.warning.r:hover::before, .btn.warning.r:active::before { -moz-box-shadow: inset 0 0 0 15px #f47983; -webkit-box-shadow: inset 0 0 0 15px #f47983; box-shadow: inset 0 0 0 15px #f47983; }
-button.warning.r:hover::after, button.warning.r:active::after, .btn.warning.r:hover::after, .btn.warning.r:active::after { -moz-box-shadow: inset 0 0 0 14.5px #c36068, 0 -1px 0 #f47983; -webkit-box-shadow: inset 0 0 0 14.5px #c36068, 0 -1px 0 #f47983; box-shadow: inset 0 0 0 14.5px #c36068, 0 -1px 0 #f47983; }
+button.warning.r:hover::after, button.warning.r:active::after, .btn.warning.r:hover::after, .btn.warning.r:active::after { -moz-box-shadow: inset 0 0 0 14.5px #cc656e, 0 -1px 0 #f47983; -webkit-box-shadow: inset 0 0 0 14.5px #cc656e, 0 -1px 0 #f47983; box-shadow: inset 0 0 0 14.5px #cc656e, 0 -1px 0 #f47983; }
 button.warning.u, .btn.warning.u { color: #f47983; }
 button.warning.u::before, button.warning.u::after, .btn.warning.u::before, .btn.warning.u::after { -moz-box-shadow: inset 0 0 0 1px #f47983; -webkit-box-shadow: inset 0 0 0 1px #f47983; box-shadow: inset 0 0 0 1px #f47983; }
 button.warning.f:hover, button.warning.f:active, .btn.warning.f:hover, .btn.warning.f:active { color: #ffffff; }
 button.warning.f:hover::before, button.warning.f:active::before, .btn.warning.f:hover::before, .btn.warning.f:active::before { -moz-box-shadow: inset 0 0 0 15px #f47983; -webkit-box-shadow: inset 0 0 0 15px #f47983; box-shadow: inset 0 0 0 15px #f47983; }
-button.warning.f:hover::after, button.warning.f:active::after, .btn.warning.f:hover::after, .btn.warning.f:active::after { -moz-box-shadow: inset 0 0 0 14.5px #c36068, 0 -1px 0 #f47983; -webkit-box-shadow: inset 0 0 0 14.5px #c36068, 0 -1px 0 #f47983; box-shadow: inset 0 0 0 14.5px #c36068, 0 -1px 0 #f47983; }
+button.warning.f:hover::after, button.warning.f:active::after, .btn.warning.f:hover::after, .btn.warning.f:active::after { -moz-box-shadow: inset 0 0 0 14.5px #cc656e, 0 -1px 0 #f47983; -webkit-box-shadow: inset 0 0 0 14.5px #cc656e, 0 -1px 0 #f47983; box-shadow: inset 0 0 0 14.5px #cc656e, 0 -1px 0 #f47983; }
+button.warning.n, .btn.warning.n { color: #f47983; }
+button.warning.n::before, .btn.warning.n::before { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+button.warning.n:hover::before, button.warning.n:active::before, .btn.warning.n:hover::before, .btn.warning.n:active::before { -moz-box-shadow: inset 0 0 0 1px #f47983; -webkit-box-shadow: inset 0 0 0 1px #f47983; box-shadow: inset 0 0 0 1px #f47983; }
 button.square, button.round, .btn.square, .btn.round { width: 29px; min-width: 29px; padding: initial; }
 button.round, .btn.round { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
-button.round::after, .btn.round::after { top: 50%; height: 33px; -moz-border-radius-bottomleft: 50%; -webkit-border-bottom-left-radius: 50%; border-bottom-left-radius: 50%; -moz-border-radius-bottomright: 50%; -webkit-border-bottom-right-radius: 50%; border-bottom-right-radius: 50%; z-index: -2; }
+button.round::after, .btn.round::after { top: 50%; height: 36.25px; -moz-border-radius-bottomleft: 50%; -webkit-border-bottom-left-radius: 50%; border-bottom-left-radius: 50%; -moz-border-radius-bottomright: 50%; -webkit-border-bottom-right-radius: 50%; border-bottom-right-radius: 50%; z-index: -2; }
 button:disabled, button:disabled.f, .btn:disabled, .btn:disabled.f { cursor: default; }
 button:disabled::before, button:disabled::after, button:disabled.f::before, button:disabled.f::after, .btn:disabled::before, .btn:disabled::after, .btn:disabled.f::before, .btn:disabled.f::after { -moz-box-shadow: inset 0 0 0 15px #e0eee8; -webkit-box-shadow: inset 0 0 0 15px #e0eee8; box-shadow: inset 0 0 0 15px #e0eee8; }
 button:disabled:hover, button:disabled.f:hover, .btn:disabled:hover, .btn:disabled.f:hover { color: #ffffff; }
 button:disabled.r, button:disabled.u, .btn:disabled.r, .btn:disabled.u { color: #e0eee8; }
 button:disabled.r::before, button:disabled.r::after, button:disabled.u::before, button:disabled.u::after, .btn:disabled.r::before, .btn:disabled.r::after, .btn:disabled.u::before, .btn:disabled.u::after { -moz-box-shadow: inset 0 0 0 1px #e0eee8; -webkit-box-shadow: inset 0 0 0 1px #e0eee8; box-shadow: inset 0 0 0 1px #e0eee8; }
 button:disabled.r:hover, button:disabled.u:hover, .btn:disabled.r:hover, .btn:disabled.u:hover { color: #e0eee8; }
+button:disabled.n, .btn:disabled.n { color: #e0eee8; }
+button:disabled.n::before, button:disabled.n::after, .btn:disabled.n::before, .btn:disabled.n::after { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+button:disabled.n:hover, .btn:disabled.n:hover { color: #e0eee8; }
 
 table { width: 100%; display: table; font-size: 18px; border: none; outline: none; }
 table thead { font-weight: 500; border-bottom: 1px solid #424c50; }

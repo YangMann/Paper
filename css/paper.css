@@ -38,6 +38,10 @@ body { background-color: #ffffff; font-family: "Source Han Sans", "Hiragino Sans
 
 .text-right { text-align: right; }
 
+.left { float: left; }
+
+.right { float: right; }
+
 .valign { display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; }
 .valign > * { display: block; }
 
@@ -929,7 +933,7 @@ label { font-size: 18px; color: #424c50; -moz-transition: all 0.3s; -o-transitio
 [type=radio] + label, [type=checkbox] + label { cursor: pointer; color: #1c1e2a; position: relative; line-height: 29px; height: 29px; display: inline-block; margin-left: 29px; padding-left: 5.56231px; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; }
 [type=radio] + label:before, [type=checkbox] + label:before { content: ''; position: absolute; top: 0; width: 27px; height: 27px; border: 1px solid #424c50; left: -29px; -moz-transition: all 0.1s; -o-transition: all 0.1s; -webkit-transition: all 0.1s; transition: all 0.1s; }
 [type=radio]:checked, [type=checkbox]:checked { border-color: transparent; }
-[type=radio]:checked + label:before, [type=checkbox]:checked + label:before { border-color: #9d2933; -moz-box-shadow: 0 0 0 1px #9d2933; -webkit-box-shadow: 0 0 0 1px #9d2933; box-shadow: 0 0 0 1px #9d2933; }
+[type=radio]:checked + label:before, [type=checkbox]:checked + label:before { border-color: #c93756; -moz-box-shadow: 0 0 0 1px #c93756; -webkit-box-shadow: 0 0 0 1px #c93756; box-shadow: 0 0 0 1px #c93756; }
 
 [type=radio] + label:before { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 
@@ -1032,3 +1036,12 @@ table.row-border tbody > tr:not(:last-child) { border-bottom: 1px solid #424c50;
 td, th { font-weight: inherit; line-height: 29px; padding: 0 0.30902em; display: table-cell; }
 
 td { text-align: inherit; }
+
+nav { width: 100%; height: 68px; line-height: 68px; font-size: 26px; }
+nav > a { font-size: 42px; }
+nav a { color: inherit; padding: 0.30902em; margin: 0 0.30902em; }
+nav a:hover { border-bottom: none; color: inherit; }
+nav ul { margin: 0; }
+nav ul li { float: left; padding-bottom: 0; }
+nav ul li > a { position: relative; background: transparent; }
+nav ul li > a:hover, nav ul li > a.active { -moz-box-shadow: inset 0 0 0 1px #424c50; -webkit-box-shadow: inset 0 0 0 1px #424c50; box-shadow: inset 0 0 0 1px #424c50; }

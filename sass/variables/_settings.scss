@@ -100,7 +100,7 @@ $color-quotation-mark: $color-mohui;
 $color-input-disabled: $color-mohui;
 $color-body-link: $color-yanzhi;
 $color-heading-link: $color-yanzhi;
-$color-checkbox-checked: $color-yanzhi;
+$color-checkbox-checked: $color-yingtao;
 $color-heading-link-hover: $color-yingtao;
 $color-body-link-hover: $color-yingtao;
 $color-heading-red-head: $color-dahong;
@@ -128,3 +128,8 @@ $form-box-size: ms(1, $form-font-size);
 $button-font-size: $medium;
 $button-box-size: ms(1, $button-font-size);
 $button-thickness: 10px;
+
+// navigation
+$navbar-height: $xxxlarge;
+$navbar-logo-font-size: ms(-1, $xxxlarge);
+$navbar-font-size: ms(-1, $navbar-logo-font-size);

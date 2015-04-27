@@ -54,6 +54,14 @@ body {
   @extend %text-right;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 // vertical align
 .valign {
   @include display-flex();

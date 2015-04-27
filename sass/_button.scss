@@ -5,6 +5,7 @@
 @import "compass/css3/box-shadow";
 @import "compass/css3/transition";
 @import "compass/css3/transform";
+@import "compass/css3/user-interface";
 
 $button-shade: 16;
 $button-angle: 30deg;
@@ -17,7 +18,7 @@ button, .btn {
   @include border-radius(0);
   height: $button-box-size;
   min-width: $button-box-size * $golden;
-  line-height: $button-font-size;
+  line-height: $button-box-size;
   font-family: inherit;
   font-size: $button-font-size;
   font-weight: inherit;
@@ -29,12 +30,15 @@ button, .btn {
   cursor: pointer;
   padding: 0 (1em / $golden);
   background-color: $color-background;
+  margin-bottom: $button-thickness * sin($button-angle); // prevent overlap
   @include transition(transform 0.1s);
   @include perspective(900px);
   @include transform-style(preserve-3d);
 
   // no default tap active style
   -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  @include user-select(none);
 
   &::before {
     // the actual button background & border
@@ -294,4 +298,9 @@ button, .btn {
       }
     }
   }
+}
+
+// remove default anchor underline
+a.btn:hover {
+  border-bottom: none;
 }

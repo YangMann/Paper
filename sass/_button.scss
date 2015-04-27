@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @import "variables/settings";
 @import "mixins/z-depth";
+@import "mixins/button-generator";
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
 @import "compass/css3/transition";
 @import "compass/css3/transform";
 @import "compass/css3/user-interface";
 
-$button-shade: 16;
 $button-angle: 30deg;
 
 // button styles
@@ -128,125 +128,23 @@ button, .btn {
     }
   }
 
+  &.large {
+    @include button-generator($color-button, ms(1, $button-box-size));
+  }
+
   // success button styles
   &.success {
-    &::before, &::after {
-      @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-success);
-    }
-    &:hover, &:active {
-      color: $color-success;
-      &::before, &::after {
-        @include box-shadow(inset 0 0 0 $border-width);
-      }
-    }
-
-    &.r {
-      color: $color-success;
-      &::before, &::after {
-        @include box-shadow(inset 0 0 0 $border-width $color-success);
-      }
-      &:hover, &:active {
-        color: $color-button-text;
-        &::before {
-          @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-success);
-        }
-        &::after {
-          @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-success, $button-shade), 0 -1px 0 $color-success);
-        }
-      }
-    }
-
-    &.u {
-      color: $color-success;
-      &::before, &::after {
-        @include box-shadow(inset 0 0 0 $border-width $color-success);
-      }
-    }
-
-    &.f {
-      &:hover, &:active {
-        color: $color-button-text;
-        &::before {
-          @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-success);
-        }
-        &::after {
-          @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-success, $button-shade), 0 -1px 0 $color-success);
-        }
-      }
-    }
-
-    &.n {
-      color: $color-success;
-      &::before {
-        @include box-shadow(none);
-      }
-
-      &:hover, &:active {
-        &::before {
-          @include box-shadow(inset 0 0 0 $border-width $color-success);
-        }
-      }
+    @include button-generator($color: $color-success);
+    &.large {
+      @include button-generator($color-success, ms(1, $button-box-size));
     }
   }
 
   // warning button styles
   &.warning {
-    &::before, &::after {
-      @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-warning);
-    }
-    &:hover, &:active {
-      color: $color-warning;
-      &::before, &::after {
-        @include box-shadow(inset 0 0 0 $border-width);
-      }
-    }
-
-    &.r {
-      color: $color-warning;
-      &::before, &::after {
-        @include box-shadow(inset 0 0 0 $border-width $color-warning);
-      }
-      &:hover, &:active {
-        color: $color-button-text;
-        &::before {
-          @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-warning);
-        }
-        &::after {
-          @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-warning, $button-shade), 0 -1px 0 $color-warning);
-        }
-      }
-    }
-
-    &.u {
-      color: $color-warning;
-      &::before, &::after {
-        @include box-shadow(inset 0 0 0 $border-width $color-warning);
-      }
-    }
-
-    &.f {
-      &:hover, &:active {
-        color: $color-button-text;
-        &::before {
-          @include box-shadow(inset 0 0 0 ceil($button-box-size/2) $color-warning);
-        }
-        &::after {
-          @include box-shadow(inset 0 0 0 $button-box-size/2 shade($color-warning, $button-shade), 0 -1px 0 $color-warning);
-        }
-      }
-    }
-
-    &.n {
-      color: $color-warning;
-      &::before {
-        @include box-shadow(none);
-      }
-
-      &:hover, &:active {
-        &::before {
-          @include box-shadow(inset 0 0 0 $border-width $color-warning);
-        }
-      }
+    @include button-generator($color: $color-warning);
+    &.large {
+      @include button-generator($color-warning, ms(1, $button-box-size));
     }
   }
 
@@ -254,6 +152,12 @@ button, .btn {
     width: $button-box-size;
     min-width: $button-box-size;
     padding: initial;
+
+    &.large {
+      width: ms(1, $button-box-size);
+      min-width: ms(1, $button-box-size);
+      padding: initial;
+    }
   }
 
   &.round {
@@ -264,6 +168,10 @@ button, .btn {
       @include border-bottom-left-radius(50%);
       @include border-bottom-right-radius(50%);
       z-index: -2;
+    }
+
+    &.large::after {
+      height: ms(1, $button-box-size) * (1 + 0.5 * (1 - sin($button-angle)));
     }
   }
 

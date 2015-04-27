@@ -1,0 +1,70 @@
+@import "../variables/settings";
+@import "compass/css3/box-shadow";
+
+@mixin button-generator($color, $box-size:$button-box-size) {
+  @if ($box-size != $button-box-size) {
+    height: $box-size;
+    min-width: $box-size * $golden;
+    line-height: $box-size;
+    padding: 0 ($box-size/$golden)
+  }
+
+  &::before, &::after {
+    @include box-shadow(inset 0 0 0 ceil($box-size/2) $color);
+  }
+
+  &:hover, &:active {
+    color: $color;
+    &::before, &::after {
+      @include box-shadow(inset 0 0 0 $border-width);
+    }
+  }
+
+  &.r {
+    color: $color;
+    &::before, &::after {
+      @include box-shadow(inset 0 0 0 $border-width $color);
+    }
+    &:hover, &:active {
+      color: $color-button-text;
+      &::before {
+        @include box-shadow(inset 0 0 0 ceil($box-size/2) $color);
+      }
+      &::after {
+        @include box-shadow(inset 0 0 0 $box-size/2 shade($color, $button-shade), 0 -1px 0 $color);
+      }
+    }
+  }
+
+  &.u {
+    color: $color;
+    &::before, &::after {
+      @include box-shadow(inset 0 0 0 $border-width $color);
+    }
+  }
+
+  &.f {
+    &:hover, &:active {
+      color: $color-button-text;
+      &::before {
+        @include box-shadow(inset 0 0 0 ceil($box-size/2) $color);
+      }
+      &::after {
+        @include box-shadow(inset 0 0 0 $box-size/2 shade($color, $button-shade), 0 -1px 0 $color);
+      }
+    }
+  }
+
+  &.n {
+    color: $color;
+    &::before {
+      @include box-shadow(none);
+    }
+
+    &:hover, &:active {
+      &::before {
+        @include box-shadow(inset 0 0 0 $border-width $color);
+      }
+    }
+  }
+}

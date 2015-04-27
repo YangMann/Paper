@@ -972,6 +972,23 @@ button.f:hover::after, button.f:active::after, .btn.f:hover::after, .btn.f:activ
 button.n, .btn.n { color: #426666; }
 button.n::before, .btn.n::before { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 button.n:hover::before, button.n:active::before, .btn.n:hover::before, .btn.n:active::before { -moz-box-shadow: inset 0 0 0 1px #426666; -webkit-box-shadow: inset 0 0 0 1px #426666; box-shadow: inset 0 0 0 1px #426666; }
+button.large, .btn.large { height: 47px; min-width: 76.0476px; line-height: 47px; padding: 0 29.0476px; }
+button.large::before, button.large::after, .btn.large::before, .btn.large::after { -moz-box-shadow: inset 0 0 0 24px #426666; -webkit-box-shadow: inset 0 0 0 24px #426666; box-shadow: inset 0 0 0 24px #426666; }
+button.large:hover, button.large:active, .btn.large:hover, .btn.large:active { color: #426666; }
+button.large:hover::before, button.large:hover::after, button.large:active::before, button.large:active::after, .btn.large:hover::before, .btn.large:hover::after, .btn.large:active::before, .btn.large:active::after { -moz-box-shadow: inset 0 0 0 1px; -webkit-box-shadow: inset 0 0 0 1px; box-shadow: inset 0 0 0 1px; }
+button.large.r, .btn.large.r { color: #426666; }
+button.large.r::before, button.large.r::after, .btn.large.r::before, .btn.large.r::after { -moz-box-shadow: inset 0 0 0 1px #426666; -webkit-box-shadow: inset 0 0 0 1px #426666; box-shadow: inset 0 0 0 1px #426666; }
+button.large.r:hover, button.large.r:active, .btn.large.r:hover, .btn.large.r:active { color: #ffffff; }
+button.large.r:hover::before, button.large.r:active::before, .btn.large.r:hover::before, .btn.large.r:active::before { -moz-box-shadow: inset 0 0 0 24px #426666; -webkit-box-shadow: inset 0 0 0 24px #426666; box-shadow: inset 0 0 0 24px #426666; }
+button.large.r:hover::after, button.large.r:active::after, .btn.large.r:hover::after, .btn.large.r:active::after { -moz-box-shadow: inset 0 0 0 23.5px #375555, 0 -1px 0 #426666; -webkit-box-shadow: inset 0 0 0 23.5px #375555, 0 -1px 0 #426666; box-shadow: inset 0 0 0 23.5px #375555, 0 -1px 0 #426666; }
+button.large.u, .btn.large.u { color: #426666; }
+button.large.u::before, button.large.u::after, .btn.large.u::before, .btn.large.u::after { -moz-box-shadow: inset 0 0 0 1px #426666; -webkit-box-shadow: inset 0 0 0 1px #426666; box-shadow: inset 0 0 0 1px #426666; }
+button.large.f:hover, button.large.f:active, .btn.large.f:hover, .btn.large.f:active { color: #ffffff; }
+button.large.f:hover::before, button.large.f:active::before, .btn.large.f:hover::before, .btn.large.f:active::before { -moz-box-shadow: inset 0 0 0 24px #426666; -webkit-box-shadow: inset 0 0 0 24px #426666; box-shadow: inset 0 0 0 24px #426666; }
+button.large.f:hover::after, button.large.f:active::after, .btn.large.f:hover::after, .btn.large.f:active::after { -moz-box-shadow: inset 0 0 0 23.5px #375555, 0 -1px 0 #426666; -webkit-box-shadow: inset 0 0 0 23.5px #375555, 0 -1px 0 #426666; box-shadow: inset 0 0 0 23.5px #375555, 0 -1px 0 #426666; }
+button.large.n, .btn.large.n { color: #426666; }
+button.large.n::before, .btn.large.n::before { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+button.large.n:hover::before, button.large.n:active::before, .btn.large.n:hover::before, .btn.large.n:active::before { -moz-box-shadow: inset 0 0 0 1px #426666; -webkit-box-shadow: inset 0 0 0 1px #426666; box-shadow: inset 0 0 0 1px #426666; }
 button.success::before, button.success::after, .btn.success::before, .btn.success::after { -moz-box-shadow: inset 0 0 0 15px #789262; -webkit-box-shadow: inset 0 0 0 15px #789262; box-shadow: inset 0 0 0 15px #789262; }
 button.success:hover, button.success:active, .btn.success:hover, .btn.success:active { color: #789262; }
 button.success:hover::before, button.success:hover::after, button.success:active::before, button.success:active::after, .btn.success:hover::before, .btn.success:hover::after, .btn.success:active::before, .btn.success:active::after { -moz-box-shadow: inset 0 0 0 1px; -webkit-box-shadow: inset 0 0 0 1px; box-shadow: inset 0 0 0 1px; }
@@ -988,6 +1005,23 @@ button.success.f:hover::after, button.success.f:active::after, .btn.success.f:ho
 button.success.n, .btn.success.n { color: #789262; }
 button.success.n::before, .btn.success.n::before { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 button.success.n:hover::before, button.success.n:active::before, .btn.success.n:hover::before, .btn.success.n:active::before { -moz-box-shadow: inset 0 0 0 1px #789262; -webkit-box-shadow: inset 0 0 0 1px #789262; box-shadow: inset 0 0 0 1px #789262; }
+button.success.large, .btn.success.large { height: 47px; min-width: 76.0476px; line-height: 47px; padding: 0 29.0476px; }
+button.success.large::before, button.success.large::after, .btn.success.large::before, .btn.success.large::after { -moz-box-shadow: inset 0 0 0 24px #789262; -webkit-box-shadow: inset 0 0 0 24px #789262; box-shadow: inset 0 0 0 24px #789262; }
+button.success.large:hover, button.success.large:active, .btn.success.large:hover, .btn.success.large:active { color: #789262; }
+button.success.large:hover::before, button.success.large:hover::after, button.success.large:active::before, button.success.large:active::after, .btn.success.large:hover::before, .btn.success.large:hover::after, .btn.success.large:active::before, .btn.success.large:active::after { -moz-box-shadow: inset 0 0 0 1px; -webkit-box-shadow: inset 0 0 0 1px; box-shadow: inset 0 0 0 1px; }
+button.success.large.r, .btn.success.large.r { color: #789262; }
+button.success.large.r::before, button.success.large.r::after, .btn.success.large.r::before, .btn.success.large.r::after { -moz-box-shadow: inset 0 0 0 1px #789262; -webkit-box-shadow: inset 0 0 0 1px #789262; box-shadow: inset 0 0 0 1px #789262; }
+button.success.large.r:hover, button.success.large.r:active, .btn.success.large.r:hover, .btn.success.large.r:active { color: #ffffff; }
+button.success.large.r:hover::before, button.success.large.r:active::before, .btn.success.large.r:hover::before, .btn.success.large.r:active::before { -moz-box-shadow: inset 0 0 0 24px #789262; -webkit-box-shadow: inset 0 0 0 24px #789262; box-shadow: inset 0 0 0 24px #789262; }
+button.success.large.r:hover::after, button.success.large.r:active::after, .btn.success.large.r:hover::after, .btn.success.large.r:active::after { -moz-box-shadow: inset 0 0 0 23.5px #647a52, 0 -1px 0 #789262; -webkit-box-shadow: inset 0 0 0 23.5px #647a52, 0 -1px 0 #789262; box-shadow: inset 0 0 0 23.5px #647a52, 0 -1px 0 #789262; }
+button.success.large.u, .btn.success.large.u { color: #789262; }
+button.success.large.u::before, button.success.large.u::after, .btn.success.large.u::before, .btn.success.large.u::after { -moz-box-shadow: inset 0 0 0 1px #789262; -webkit-box-shadow: inset 0 0 0 1px #789262; box-shadow: inset 0 0 0 1px #789262; }
+button.success.large.f:hover, button.success.large.f:active, .btn.success.large.f:hover, .btn.success.large.f:active { color: #ffffff; }
+button.success.large.f:hover::before, button.success.large.f:active::before, .btn.success.large.f:hover::before, .btn.success.large.f:active::before { -moz-box-shadow: inset 0 0 0 24px #789262; -webkit-box-shadow: inset 0 0 0 24px #789262; box-shadow: inset 0 0 0 24px #789262; }
+button.success.large.f:hover::after, button.success.large.f:active::after, .btn.success.large.f:hover::after, .btn.success.large.f:active::after { -moz-box-shadow: inset 0 0 0 23.5px #647a52, 0 -1px 0 #789262; -webkit-box-shadow: inset 0 0 0 23.5px #647a52, 0 -1px 0 #789262; box-shadow: inset 0 0 0 23.5px #647a52, 0 -1px 0 #789262; }
+button.success.large.n, .btn.success.large.n { color: #789262; }
+button.success.large.n::before, .btn.success.large.n::before { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+button.success.large.n:hover::before, button.success.large.n:active::before, .btn.success.large.n:hover::before, .btn.success.large.n:active::before { -moz-box-shadow: inset 0 0 0 1px #789262; -webkit-box-shadow: inset 0 0 0 1px #789262; box-shadow: inset 0 0 0 1px #789262; }
 button.warning::before, button.warning::after, .btn.warning::before, .btn.warning::after { -moz-box-shadow: inset 0 0 0 15px #f47983; -webkit-box-shadow: inset 0 0 0 15px #f47983; box-shadow: inset 0 0 0 15px #f47983; }
 button.warning:hover, button.warning:active, .btn.warning:hover, .btn.warning:active { color: #f47983; }
 button.warning:hover::before, button.warning:hover::after, button.warning:active::before, button.warning:active::after, .btn.warning:hover::before, .btn.warning:hover::after, .btn.warning:active::before, .btn.warning:active::after { -moz-box-shadow: inset 0 0 0 1px; -webkit-box-shadow: inset 0 0 0 1px; box-shadow: inset 0 0 0 1px; }
@@ -1004,9 +1038,28 @@ button.warning.f:hover::after, button.warning.f:active::after, .btn.warning.f:ho
 button.warning.n, .btn.warning.n { color: #f47983; }
 button.warning.n::before, .btn.warning.n::before { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 button.warning.n:hover::before, button.warning.n:active::before, .btn.warning.n:hover::before, .btn.warning.n:active::before { -moz-box-shadow: inset 0 0 0 1px #f47983; -webkit-box-shadow: inset 0 0 0 1px #f47983; box-shadow: inset 0 0 0 1px #f47983; }
+button.warning.large, .btn.warning.large { height: 47px; min-width: 76.0476px; line-height: 47px; padding: 0 29.0476px; }
+button.warning.large::before, button.warning.large::after, .btn.warning.large::before, .btn.warning.large::after { -moz-box-shadow: inset 0 0 0 24px #f47983; -webkit-box-shadow: inset 0 0 0 24px #f47983; box-shadow: inset 0 0 0 24px #f47983; }
+button.warning.large:hover, button.warning.large:active, .btn.warning.large:hover, .btn.warning.large:active { color: #f47983; }
+button.warning.large:hover::before, button.warning.large:hover::after, button.warning.large:active::before, button.warning.large:active::after, .btn.warning.large:hover::before, .btn.warning.large:hover::after, .btn.warning.large:active::before, .btn.warning.large:active::after { -moz-box-shadow: inset 0 0 0 1px; -webkit-box-shadow: inset 0 0 0 1px; box-shadow: inset 0 0 0 1px; }
+button.warning.large.r, .btn.warning.large.r { color: #f47983; }
+button.warning.large.r::before, button.warning.large.r::after, .btn.warning.large.r::before, .btn.warning.large.r::after { -moz-box-shadow: inset 0 0 0 1px #f47983; -webkit-box-shadow: inset 0 0 0 1px #f47983; box-shadow: inset 0 0 0 1px #f47983; }
+button.warning.large.r:hover, button.warning.large.r:active, .btn.warning.large.r:hover, .btn.warning.large.r:active { color: #ffffff; }
+button.warning.large.r:hover::before, button.warning.large.r:active::before, .btn.warning.large.r:hover::before, .btn.warning.large.r:active::before { -moz-box-shadow: inset 0 0 0 24px #f47983; -webkit-box-shadow: inset 0 0 0 24px #f47983; box-shadow: inset 0 0 0 24px #f47983; }
+button.warning.large.r:hover::after, button.warning.large.r:active::after, .btn.warning.large.r:hover::after, .btn.warning.large.r:active::after { -moz-box-shadow: inset 0 0 0 23.5px #cc656e, 0 -1px 0 #f47983; -webkit-box-shadow: inset 0 0 0 23.5px #cc656e, 0 -1px 0 #f47983; box-shadow: inset 0 0 0 23.5px #cc656e, 0 -1px 0 #f47983; }
+button.warning.large.u, .btn.warning.large.u { color: #f47983; }
+button.warning.large.u::before, button.warning.large.u::after, .btn.warning.large.u::before, .btn.warning.large.u::after { -moz-box-shadow: inset 0 0 0 1px #f47983; -webkit-box-shadow: inset 0 0 0 1px #f47983; box-shadow: inset 0 0 0 1px #f47983; }
+button.warning.large.f:hover, button.warning.large.f:active, .btn.warning.large.f:hover, .btn.warning.large.f:active { color: #ffffff; }
+button.warning.large.f:hover::before, button.warning.large.f:active::before, .btn.warning.large.f:hover::before, .btn.warning.large.f:active::before { -moz-box-shadow: inset 0 0 0 24px #f47983; -webkit-box-shadow: inset 0 0 0 24px #f47983; box-shadow: inset 0 0 0 24px #f47983; }
+button.warning.large.f:hover::after, button.warning.large.f:active::after, .btn.warning.large.f:hover::after, .btn.warning.large.f:active::after { -moz-box-shadow: inset 0 0 0 23.5px #cc656e, 0 -1px 0 #f47983; -webkit-box-shadow: inset 0 0 0 23.5px #cc656e, 0 -1px 0 #f47983; box-shadow: inset 0 0 0 23.5px #cc656e, 0 -1px 0 #f47983; }
+button.warning.large.n, .btn.warning.large.n { color: #f47983; }
+button.warning.large.n::before, .btn.warning.large.n::before { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+button.warning.large.n:hover::before, button.warning.large.n:active::before, .btn.warning.large.n:hover::before, .btn.warning.large.n:active::before { -moz-box-shadow: inset 0 0 0 1px #f47983; -webkit-box-shadow: inset 0 0 0 1px #f47983; box-shadow: inset 0 0 0 1px #f47983; }
 button.square, button.round, .btn.square, .btn.round { width: 29px; min-width: 29px; padding: initial; }
+button.square.large, button.round.large, .btn.square.large, .btn.round.large { width: 47px; min-width: 47px; padding: initial; }
 button.round, .btn.round { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 button.round::after, .btn.round::after { top: 50%; height: 36.25px; -moz-border-radius-bottomleft: 50%; -webkit-border-bottom-left-radius: 50%; border-bottom-left-radius: 50%; -moz-border-radius-bottomright: 50%; -webkit-border-bottom-right-radius: 50%; border-bottom-right-radius: 50%; z-index: -2; }
+button.round.large::after, .btn.round.large::after { height: 58.75px; }
 button:disabled, button:disabled.f, .btn:disabled, .btn:disabled.f { cursor: default; }
 button:disabled::before, button:disabled::after, button:disabled.f::before, button:disabled.f::after, .btn:disabled::before, .btn:disabled::after, .btn:disabled.f::before, .btn:disabled.f::after { -moz-box-shadow: inset 0 0 0 15px #e0eee8; -webkit-box-shadow: inset 0 0 0 15px #e0eee8; box-shadow: inset 0 0 0 15px #e0eee8; }
 button:disabled:hover, button:disabled.f:hover, .btn:disabled:hover, .btn:disabled.f:hover { color: #ffffff; }

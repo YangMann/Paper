@@ -870,7 +870,7 @@ abbr { border-bottom: 1px dotted; font-variant: normal; cursor: help; }
   .row .col.span-tablet-vertical-12-12 { width: 100%; } }
 .row .col.centered { margin-left: auto; margin-right: auto; float: none; }
 
-.doc { position: relative; overflow: hidden; margin-top: 1.0665em; margin-bottom: 1.0665em; background-color: #fffefa; padding: 6.18034% 10%; -moz-box-shadow: 0 0 1px 0 rgba(66, 76, 80, 0.61803); -webkit-box-shadow: 0 0 1px 0 rgba(66, 76, 80, 0.61803); box-shadow: 0 0 1px 0 rgba(66, 76, 80, 0.61803); }
+.doc { position: relative; overflow: hidden; width: 100%; margin-top: 1.0665em; margin-bottom: 1.0665em; background-color: #fffefa; padding: 6.18034% 10%; -moz-box-shadow: 0 0 1px 0 rgba(66, 76, 80, 0.61803); -webkit-box-shadow: 0 0 1px 0 rgba(66, 76, 80, 0.61803); box-shadow: 0 0 1px 0 rgba(66, 76, 80, 0.61803); }
 .doc .doc-title { text-align: center; margin-bottom: 1.0665em; }
 .doc.doc-red-head { background-color: #ffffff; }
 .doc.doc-red-head .doc-title { padding-bottom: 1.0665em; margin-bottom: 1.3185em; border-bottom: 2px #ff2121 solid; }

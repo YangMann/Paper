@@ -12,6 +12,7 @@
 .doc {
   position: relative;
   overflow: hidden;
+  width: 100%;
   @include rhythm-margins($rhythm-line-height);
   background-color: $color-paper;
   padding: $document-padding/$golden $document-padding;

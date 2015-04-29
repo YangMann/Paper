@@ -1,4 +1,0 @@
-// remove the unit of a numeric expression
-@function remove-unit($number) {
-  @return $number / ($number * 0 + 1);
-}

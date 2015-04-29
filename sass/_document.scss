@@ -102,6 +102,7 @@
       p {
         line-height: $document-vertical-line-height;
         font-size: $document-vertical-line-height/$golden;
+        text-indent: 0;
       }
       @include background-image(linear-gradient(left, $color-hei 0, $color-paper 1px, $color-paper 2.5em));
       @include background-size(2.5em 100%);

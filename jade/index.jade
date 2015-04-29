@@ -12,9 +12,15 @@ block style
             position: relative;
             left: -1px;
         }
-        #begin {
-            margin: 1em;
-            margin: 1rem;
+        #links>a.btn {
+            margin: 1em 0.5em;
+            margin: 1rem 0.5rem;
+        }
+        #foot-text {
+            position: absolute;
+            right: 0.618rem;
+            bottom: 0.618rem;
+            color: #758a99;
         }
 
 block content
@@ -31,5 +37,28 @@ block content
                         p 每览昔人兴感之由，若合一契，未尝不临文嗟悼，不能喻之于怀。固知一死生为虚诞，齐彭殇为妄作。后之视今，亦犹今之视昔，悲夫！故列叙时人，录其所述。虽世殊事异，所以兴怀，其致一也。后之览者，亦将有感于斯文。
         .col.span-5-12.text-center.no-gutter
             h1#title 纸 Paper
-            h4 一个复古的现代框架
-            a.btn.large.u#begin(href="demo.html") 开始使用
+            h4 一个复古的前端框架
+            div#links
+                a.btn.large.u#begin(href="demo.html") 了解更多
+                a.btn.large.u#github(href="https://github.com/YangMann/Paper") 查看代码
+            div#foot-text.text-right
+                div#latest-commit Latest commit&nbsp;
+                    a#sha
+                    span#date
+                div#copyright &copy; 2015 Paper CSS, All rights reserved.
+
+block append js
+    script.
+        if ($('#latest-commit').length) {
+            $.ajax({
+                url: "https://api.github.com/repos/YangMann/Paper/commits/master",
+                dataType: "json",
+                success: function (data) {
+                    var sha = data.sha.substring(0, 10)
+                    var date = data.commit.author.date.substring(0, 10);
+                    var $commit = $('#latest-commit');
+                    $commit.find('#sha').html(sha).attr('href', data.html_url);
+                    $commit.find('#date').html(' ' + date);
+                }
+            });
+        }

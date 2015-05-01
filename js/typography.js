@@ -1,5 +1,3 @@
-'use strict';
-
 function emphasize() {
     $('em').each(function () {
         var tmp = $(this).text();

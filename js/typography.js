@@ -1,5 +1,6 @@
+'use strict';
+
 function emphasize() {
-    'use strict';
     $('em').each(function () {
         var tmp = $(this).text();
         tmp = tmp.split("");

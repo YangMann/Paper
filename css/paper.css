@@ -1090,11 +1090,21 @@ td, th { font-weight: inherit; line-height: 29px; padding: 0 0.30902em; display:
 
 td { text-align: inherit; }
 
-nav { width: 100%; height: 68px; line-height: 68px; font-size: 26px; }
+nav ul > li > ul, .dropdown > ul { position: absolute; top: 12.96556px; left: 8.03444px; max-height: 1.61803em; overflow: hidden; background-color: #ffffff; z-index: -1; -moz-transition: max-height 0s; -o-transition: max-height 0s; -webkit-transition: max-height 0s; transition: max-height 0s; }
+nav ul > li > ul > li, .dropdown > ul > li { float: none; padding: 0.30902em; line-height: 26px; white-space: nowrap; }
+nav ul > li > ul > li:first-child, .dropdown > ul > li:first-child { padding-top: 1.92705em; }
+
+nav ul > li.active > ul, .dropdown.active > ul { height: auto; max-height: 500px; background-color: #ffffff; -moz-box-shadow: 0 0 0 1px #9d2933; -webkit-box-shadow: 0 0 0 1px #9d2933; box-shadow: 0 0 0 1px #9d2933; -moz-transition: max-height 0.3s; -o-transition: max-height 0.3s; -webkit-transition: max-height 0.3s; transition: max-height 0.3s; }
+
+nav { width: 100%; height: 68px; line-height: 68px; font-size: 26px; background-color: #ffffff; }
 nav > a { font-size: 42px; }
-nav a { color: inherit; padding: 0.30902em; margin: 0 0.30902em; }
-nav a:hover { border-bottom: none; color: inherit; }
+nav > a:hover { border-bottom: none; }
+nav a { color: inherit; }
+nav a:hover { color: inherit; }
+nav > ul > li > a { padding: 0.30902em; margin: 0 0.30902em; }
 nav ul { margin: 0; }
-nav ul li { float: left; padding-bottom: 0; }
-nav ul li > a { position: relative; background: transparent; }
-nav ul li > a:hover, nav ul li > a.active { -moz-box-shadow: inset 0 0 0 1px #424c50; -webkit-box-shadow: inset 0 0 0 1px #424c50; box-shadow: inset 0 0 0 1px #424c50; }
+nav ul > li { float: left; padding-bottom: 0; position: relative; }
+nav ul > li.active { z-index: 1; }
+nav ul > li.active > a:hover { border-bottom: none; }
+nav ul > li > a { background: transparent; white-space: nowrap; }
+nav ul > li > a:hover { color: #9d2933; border-bottom: none; }

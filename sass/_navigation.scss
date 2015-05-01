@@ -1,6 +1,36 @@
 @charset "UTF-8";
 @import "variables/settings";
 @import "compass/css3/box-shadow";
+@import "compass/css3/transition";
+
+%dropdown-ul {
+  position: absolute;
+  //top: 1em * (1+1/$golden);
+  top: ($navbar-height - $navbar-font-size)/2 - $navbar-font-size/$golden/2;
+  left: $navbar-font-size/$golden/2;
+  max-height: 1em * (1+1/$golden);
+  overflow: hidden;
+  background-color: $color-navbar;
+  z-index: -1;
+  > li {
+    float: none;
+    padding: (1em/$golden/2);
+    &:first-child {
+      padding-top: 1em * (1+1/$golden*1.5);
+    }
+    line-height: $navbar-font-size;
+    white-space: nowrap;
+  }
+  @include transition(max-height 0s);
+}
+
+%dropdown-ul-active {
+  height: auto;
+  max-height: 500px;
+  background-color: $color-background;
+  @include box-shadow(0 0 0 1px $color-navbar-box);
+  @include transition(max-height 0.3s);
+}
 
 // navbar
 nav {
@@ -8,34 +38,65 @@ nav {
   height: $navbar-height;
   line-height: $navbar-height;
   font-size: $navbar-font-size;
+  background-color: $color-navbar;
 
   & > a {
     font-size: $navbar-logo-font-size;
+    &:hover {
+      border-bottom: none;
+    }
   }
 
   a {
     color: inherit;
-    padding: (1em/$golden/2);
-    margin: 0 (1em/$golden/2);
     &:hover {
-      border-bottom: none;
       color: inherit;
     }
   }
 
+  > ul > li > a {
+    padding: (1em/$golden/2);
+    margin: 0 (1em/$golden/2);
+  }
+
   ul {
     margin: 0;
-    li {
+    > li {
       float: left;
       padding-bottom: 0;
+      position: relative;
+      &.active {
+        z-index: 1;
+      }
+
+      & > ul { // navbar dropdown
+        @extend %dropdown-ul;
+      }
+      &.active {
+        > ul {
+          @extend %dropdown-ul-active;
+        }
+        > a:hover {
+          border-bottom: none;
+        }
+      }
 
       > a {
-        position: relative;
         background: transparent;
-        &:hover, &.active {
-          @include box-shadow(inset 0 0 0 $border-width $color-shade);
+        white-space: nowrap;
+        &:hover {
+          color: $color-navbar-box;
+          border-bottom: none;
         }
       }
     }
   }
+}
+
+.dropdown > ul {
+  @extend %dropdown-ul;
+}
+
+.dropdown.active > ul {
+  @extend %dropdown-ul-active;
 }

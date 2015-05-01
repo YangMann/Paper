@@ -7,7 +7,7 @@ function navDropdown() {
         $(this).toggleClass("active");
         if ($(this).hasClass("active")) {
             var uid = Date.now();
-            $(document).one('click.' + uid, function (e) {
+            $(document).on('click.' + uid, function (e) {
                 if (!$(e.target).closest(".dropdown").length) {
                     $(".dropdown.active").removeClass("active");
                     $(document).off('click.' + uid);

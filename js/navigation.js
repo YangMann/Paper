@@ -15,9 +15,9 @@ function navDropdown() {
                 }
             });
         }
-    })
+    });
 }
 
 $(function() {
-    navDropdown()
+    navDropdown();
 });

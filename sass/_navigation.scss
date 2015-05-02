@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "variables/settings";
+@import "mixins/z-depth";
 @import "compass/css3/box-shadow";
 @import "compass/css3/transition";
 
@@ -28,7 +29,7 @@
   height: auto;
   max-height: 500px;
   background-color: $color-background;
-  @include box-shadow(0 0 0 1px $color-navbar-box);
+  @include z-depth-1;
   @include transition(max-height 0.3s);
 }
 
@@ -52,15 +53,17 @@ nav {
     &:hover {
       color: inherit;
     }
+    @include transition(color 0.1s, border-bottom 0.1s);
   }
 
   > ul > li > a {
-    padding: (1em/$golden/2);
-    margin: 0 (1em/$golden/2);
+    padding: (1em/$golden/2) 0;
+    margin: 0 (1em/$golden);
   }
 
   ul {
     margin: 0;
+    float: left;
     > li {
       float: left;
       padding-bottom: 0;
@@ -76,7 +79,7 @@ nav {
         > ul {
           @extend %dropdown-ul-active;
         }
-        > a:hover {
+        a:hover {
           border-bottom: none;
         }
       }
@@ -86,7 +89,6 @@ nav {
         white-space: nowrap;
         &:hover {
           color: $color-navbar-box;
-          border-bottom: none;
         }
       }
     }
@@ -99,4 +101,52 @@ nav {
 
 .dropdown.active > ul {
   @extend %dropdown-ul-active;
+}
+
+nav.crumb {
+  a {
+    color: $color-navbar-box;
+    padding-top: 0;
+    &:hover {
+      color: $color-body-text;
+      border-bottom: none;
+    }
+  }
+
+  ul {
+    > li {
+      &:first-child {
+        a {
+          margin-left: 0;
+        }
+      }
+      &:last-child {
+        a {
+          margin-right: 0;
+        }
+      }
+      &:not(:last-child) {
+        a {
+          position: relative;
+          &::after {
+            content: '//';
+            display: inline-block;
+            font-size: $navbar-font-size;
+            line-height: $navbar-font-size;
+            position: relative;
+            top: 0;
+            bottom: 0;
+            padding-bottom: 1em/$golden/2;
+            right: -1em/$golden;
+            color: $color-navbar-box;
+          }
+        }
+      }
+      &.active {
+        a {
+          color: $color-body-text;
+        }
+      }
+    }
+  }
 }

@@ -29,7 +29,7 @@ Paper, a modern CSS framework with a vintage breeze of China.
 
 ### Buttons
 - [x] Basic button style
-- [ ] Button animation
+- [x] Button animation
 - [ ] Progress bar in button
 
 ### Icons
@@ -44,8 +44,8 @@ Paper, a modern CSS framework with a vintage breeze of China.
 - [x] Basic table style
 
 ### Navigation
-- [ ] Basic nav style
-- [ ] Basic cucumber style
+- [x] Basic nav style
+- [x] Basic breadcrumb style
 
 ### Misc
 - [ ] Media

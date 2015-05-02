@@ -1109,10 +1109,10 @@ nav ul > li.active a:hover { border-bottom: none; }
 nav ul > li > a { background: transparent; white-space: nowrap; }
 nav ul > li > a:hover { color: #758a99; }
 
-nav.crumb a { color: #758a99; padding-top: 0; }
-nav.crumb a:hover { color: #1c1e2a; border-bottom: none; }
-nav.crumb ul > li:first-child a { margin-left: 0; }
-nav.crumb ul > li:last-child a { margin-right: 0; }
-nav.crumb ul > li:not(:last-child) a { position: relative; }
-nav.crumb ul > li:not(:last-child) a::after { content: '//'; display: inline-block; font-size: 26px; line-height: 26px; position: relative; top: 0; bottom: 0; padding-bottom: 0.30902em; right: -0.61803em; color: #758a99; }
-nav.crumb ul > li.active a { color: #1c1e2a; }
+nav.crumb a, nav.breadcrumb a { color: #758a99; padding-top: 0; }
+nav.crumb a:hover, nav.breadcrumb a:hover { color: #1c1e2a; border-bottom: none; }
+nav.crumb ul > li:first-child a, nav.breadcrumb ul > li:first-child a { margin-left: 0; }
+nav.crumb ul > li:last-child a, nav.breadcrumb ul > li:last-child a { margin-right: 0; }
+nav.crumb ul > li:not(:last-child) a, nav.breadcrumb ul > li:not(:last-child) a { position: relative; }
+nav.crumb ul > li:not(:last-child) a::after, nav.breadcrumb ul > li:not(:last-child) a::after { content: '//'; display: inline-block; font-size: 26px; line-height: 26px; position: relative; top: 0; bottom: 0; padding-bottom: 0.30902em; right: -0.61803em; color: #758a99; }
+nav.crumb ul > li.active a, nav.breadcrumb ul > li.active a { color: #1c1e2a; }

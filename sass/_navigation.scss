@@ -103,7 +103,7 @@ nav {
   @extend %dropdown-ul-active;
 }
 
-nav.crumb {
+nav.crumb, nav.breadcrumb {
   a {
     color: $color-navbar-box;
     padding-top: 0;

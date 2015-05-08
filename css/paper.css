@@ -1116,3 +1116,6 @@ nav.crumb ul > li:last-child a, nav.breadcrumb ul > li:last-child a { margin-rig
 nav.crumb ul > li:not(:last-child) a, nav.breadcrumb ul > li:not(:last-child) a { position: relative; }
 nav.crumb ul > li:not(:last-child) a::after, nav.breadcrumb ul > li:not(:last-child) a::after { content: '//'; display: inline-block; font-size: 26px; line-height: 26px; position: relative; top: 0; bottom: 0; padding-bottom: 0.30902em; right: -0.61803em; color: #758a99; }
 nav.crumb ul > li.active a, nav.breadcrumb ul > li.active a { color: #1c1e2a; }
+
+ul.tabs { position: relative; width: 100%; white-space: nowrap; }
+ul.tabs > li { display: block; float: left; }

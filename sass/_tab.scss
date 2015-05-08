@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+// tab styles
+ul.tabs {
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+
+  > li {
+    display: block;
+    float: left;
+  }
+}

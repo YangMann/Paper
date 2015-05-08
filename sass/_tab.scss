@@ -1,13 +1,39 @@
 @charset "UTF-8";
+@import "variables/settings";
+@import "compass/css3/transition";
 
 // tab styles
 ul.tabs {
   position: relative;
   width: 100%;
   white-space: nowrap;
+  height: ms(1, $navbar-font-size);
+  font-size: $navbar-font-size; // must be declared here, since js will capture this value
 
   > li {
     display: block;
     float: left;
+    font-size: inherit;
+    line-height: ms(1, $navbar-font-size);
+    height: ms(1, $navbar-font-size);
+    cursor: pointer;
+    color: $color-navbar-box;
+    @include transition(color 0.1s);
+
+    &:hover, &.active {
+      color: $color-body-text;
+    }
+
+    a {
+      border-bottom: none;
+      color: inherit;
+    }
+  }
+
+  > .tab-indicator {
+    position: absolute;
+    bottom: 0;
+    border-bottom: $border-width solid $color-navbar-box;
+    @include transition(transform 0.3s, width 0.3s);
   }
 }

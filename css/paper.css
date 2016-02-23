@@ -42,8 +42,7 @@ body { background-color: #ffffff; font-family: "Source Han Sans", "Hiragino Sans
 
 .right { float: right; }
 
-.valign { display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; }
-.valign > * { display: block; }
+.valign { display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; /* > * { display: block; }*/ }
 
 .hide:not(.show) { display: none; }
 
